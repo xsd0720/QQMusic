@@ -1,0 +1,19 @@
+//
+//  QQMusic_PrefixHeader.pch
+//  QQMusic
+//
+//  Created by xwmedia01 on 17/3/2.
+//  Copyright © 2017年 xwmedia01. All rights reserved.
+//
+
+#ifndef QQMusic_PrefixHeader_pch
+#define QQMusic_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "QMPublicDefine.h"
+#import "QMPublicHeader.h"
+#import "QMPublicNetwork.h"
+
+#endif /* QQMusic_PrefixHeader_pch */
