@@ -43,6 +43,11 @@
 		0C057C281E67FBA600B7A9CC /* QMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C241E67FBA600B7A9CC /* QMMainViewController.m */; };
 		0C057C291E67FBA600B7A9CC /* QMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C261E67FBA600B7A9CC /* QMNavigationController.m */; };
 		0C057C2F1E67FBD700B7A9CC /* QMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C2E1E67FBD700B7A9CC /* QMSettingViewController.m */; };
+		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
+		0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */; };
+		0C8871E81E69460A00A2D295 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */; };
+		0C8871EB1E696DC100A2D295 /* QMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871EA1E696DC100A2D295 /* QMMineViewController.m */; };
+		0C8871EE1E696DD500A2D295 /* QMMusicLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871ED1E696DD500A2D295 /* QMMusicLibraryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +126,15 @@
 		0C057C261E67FBA600B7A9CC /* QMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMNavigationController.m; sourceTree = "<group>"; };
 		0C057C2D1E67FBD700B7A9CC /* QMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMSettingViewController.h; sourceTree = "<group>"; };
 		0C057C2E1E67FBD700B7A9CC /* QMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMSettingViewController.m; sourceTree = "<group>"; };
+		0C8871E01E69440600A2D295 /* QMContainersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMContainersViewController.h; sourceTree = "<group>"; };
+		0C8871E11E69440600A2D295 /* QMContainersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMContainersViewController.m; sourceTree = "<group>"; };
+		0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeftMenuViewController.h; sourceTree = "<group>"; };
+		0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLeftMenuViewController.m; sourceTree = "<group>"; };
+		0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		0C8871E91E696DC100A2D295 /* QMMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMineViewController.h; sourceTree = "<group>"; };
+		0C8871EA1E696DC100A2D295 /* QMMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMineViewController.m; sourceTree = "<group>"; };
+		0C8871EC1E696DD500A2D295 /* QMMusicLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMusicLibraryViewController.h; sourceTree = "<group>"; };
+		0C8871ED1E696DD500A2D295 /* QMMusicLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMusicLibraryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,7 @@
 		0C057B891E67EB1E00B7A9CC /* QQMusic */ = {
 			isa = PBXGroup;
 			children = (
+				0C8871E61E69460300A2D295 /* StaticImage */,
 				0C057BA91E67EC5900B7A9CC /* Base */,
 				0C057BAA1E67EC5900B7A9CC /* Classes */,
 				0C057BAB1E67EC5900B7A9CC /* Lib */,
@@ -356,6 +371,14 @@
 				0C057C241E67FBA600B7A9CC /* QMMainViewController.m */,
 				0C057C251E67FBA600B7A9CC /* QMNavigationController.h */,
 				0C057C261E67FBA600B7A9CC /* QMNavigationController.m */,
+				0C8871E01E69440600A2D295 /* QMContainersViewController.h */,
+				0C8871E11E69440600A2D295 /* QMContainersViewController.m */,
+				0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */,
+				0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */,
+				0C8871E91E696DC100A2D295 /* QMMineViewController.h */,
+				0C8871EA1E696DC100A2D295 /* QMMineViewController.m */,
+				0C8871EC1E696DD500A2D295 /* QMMusicLibraryViewController.h */,
+				0C8871ED1E696DD500A2D295 /* QMMusicLibraryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -381,6 +404,14 @@
 				0C057C2E1E67FBD700B7A9CC /* QMSettingViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C8871E61E69460300A2D295 /* StaticImage */ = {
+			isa = PBXGroup;
+			children = (
+				0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */,
+			);
+			path = StaticImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +475,7 @@
 			files = (
 				0C057BA61E67EBF000B7A9CC /* Info.plist in Resources */,
 				0C057B9A1E67EB1E00B7A9CC /* LaunchScreen.storyboard in Resources */,
+				0C8871E81E69460A00A2D295 /* LaunchImage-568h@2x.png in Resources */,
 				0C057B971E67EB1E00B7A9CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,8 +495,10 @@
 				0C057C291E67FBA600B7A9CC /* QMNavigationController.m in Sources */,
 				0C057C101E67F5CF00B7A9CC /* UIView+Toast.m in Sources */,
 				0C057BF21E67ECCF00B7A9CC /* AFNetworkReachabilityManager.m in Sources */,
+				0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */,
 				0C057BE61E67ECCF00B7A9CC /* SDWebImageDownloader.m in Sources */,
 				0C057BEE1E67ECCF00B7A9CC /* UIImageView+HighlightedWebCache.m in Sources */,
+				0C8871EB1E696DC100A2D295 /* QMMineViewController.m in Sources */,
 				0C057C271E67FBA600B7A9CC /* QMBaseViewController.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
@@ -475,6 +509,7 @@
 				0C057BE51E67ECCF00B7A9CC /* SDWebImageDecoder.m in Sources */,
 				0C057C0F1E67F5CF00B7A9CC /* UIView+Extention.m in Sources */,
 				0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */,
+				0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */,
 				0C057BE41E67ECCF00B7A9CC /* SDWebImageCompat.m in Sources */,
 				0C057BA71E67EBF000B7A9CC /* main.m in Sources */,
 				0C057BED1E67ECCF00B7A9CC /* UIImage+WebP.m in Sources */,
@@ -484,6 +519,7 @@
 				0C057BE81E67ECCF00B7A9CC /* SDWebImageManager.m in Sources */,
 				0C057BEC1E67ECCF00B7A9CC /* UIImage+MultiFormat.m in Sources */,
 				0C057BE91E67ECCF00B7A9CC /* SDWebImagePrefetcher.m in Sources */,
+				0C8871EE1E696DD500A2D295 /* QMMusicLibraryViewController.m in Sources */,
 				0C057BE11E67ECCF00B7A9CC /* MKAnnotationView+WebCache.m in Sources */,
 				0C057BF01E67ECCF00B7A9CC /* UIView+WebCacheOperation.m in Sources */,
 				0C057BE31E67ECCF00B7A9CC /* SDImageCache.m in Sources */,
@@ -599,14 +635,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U7ZS2JEVUH;
 				GCC_PREFIX_HEADER = QQMusic/Main/QQMusic_PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/QQMusic/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.faiwong.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4b89cad4-4d27-44a1-b9d3-4cc1b1159141";
 				PROVISIONING_PROFILE_SPECIFIER = lilworldDevelopment;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,12 +653,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = QQMusic/Main/QQMusic_PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/QQMusic/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.faiwong.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

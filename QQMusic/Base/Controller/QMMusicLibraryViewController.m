@@ -1,24 +1,24 @@
 //
-//  QMBaseViewController.m
+//  QMMusicLibraryViewController.m
 //  QQMusic
 //
-//  Created by xwmedia01 on 17/3/2.
+//  Created by xwmedia01 on 2017/3/3.
 //  Copyright © 2017年 xwmedia01. All rights reserved.
 //
 
-#import "QMBaseViewController.h"
+#import "QMMusicLibraryViewController.h"
 
-@interface QMBaseViewController ()
+@interface QMMusicLibraryViewController ()
 
 @end
 
-@implementation QMBaseViewController
+@implementation QMMusicLibraryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+        self.view.backgroundColor = [UIColor orangeColor];
     
 }
 

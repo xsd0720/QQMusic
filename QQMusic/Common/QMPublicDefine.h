@@ -82,14 +82,7 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
-//  自定义颜色
-#define myColor_gray [UIColor colorWithRed:236 / 255.0 green:237 / 255.0 blue:240 / 255.0 alpha:1.0]
-#define myColor_lightGray [UIColor colorWithRed:129 / 255.0 green:143 / 255.0 blue:162 / 255.0 alpha:1.0]
-#define myColor_cyan [UIColor colorWithRed:53 / 255.0 green:181 / 255.0 blue:203 / 255.0 alpha:1.0]
-#define myColor_dark [UIColor colorWithRed:108 / 255.0 green:123 / 255.0 blue:143 / 255.0 alpha:1.0]
-#define countryColor [UIColor colorWithRed:215 / 255.0 green:219 / 255.0 blue:224 / 255.0 alpha:1.0]
-#define logOutColor [UIColor colorWithRed:243 / 255.0 green:41 / 255.0 blue:85 / 255.0 alpha:1.0]
-#define MaskColor   [UIColor colorWithRed:52 / 255.0 green:69 / 255.0 blue:90 / 255.0 alpha:1.0]
+
 
 #define SCREEN_SCALE (SCREEN_WIDTH/320.)
 
@@ -126,5 +119,8 @@
 
 //沙盒路径
 #define systemDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+#define MAIN_TONE_COLOR  [UIColor colorWithRed:49 / 255.0 green:194 / 255.0 blue:100 / 255.0 alpha:1.0]
+#define SEARCH_BAR_COLOR  [UIColor colorWithRed:26 / 255.0 green:172 / 255.0 blue:90 / 255.0 alpha:1.0]
 
 #endif /* QMPublicDefine_h */
