@@ -8,6 +8,6 @@
 
 #import "QMBaseViewController.h"
 
-@interface QMMainViewController : QMBaseViewController
+@interface QMMainViewController : UINavigationController
 
 @end

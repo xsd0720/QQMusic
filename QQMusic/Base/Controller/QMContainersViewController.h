@@ -8,7 +8,18 @@
 
 #import "QMBaseViewController.h"
 
+@protocol QMContainersViewControllerDelegate <NSObject>
+
+- (void)containersNavLeftButtonAction;
+
+- (void)containersNavRightButtonAction;
+
+@end
 
 @interface QMContainersViewController : QMBaseViewController
+
+@property (nonatomic, assign) id<QMContainersViewControllerDelegate> containersDelegate;
+
+- (BOOL)scrollOffsetXIsZero;
 
 @end

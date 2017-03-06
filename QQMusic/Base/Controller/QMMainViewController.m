@@ -10,17 +10,22 @@
 
 #import "QMNavigationController.h"
 #import "QMLeftMenuViewController.h"
-
 #import "QMContainersViewController.h"
 
-@interface QMMainViewController ()
+
+#define MENUMAXSHOWWIDTH   (SCREEN_WIDTH*3/4)
+
+@interface QMMainViewController ()<UIGestureRecognizerDelegate, QMContainersViewControllerDelegate>
 
 @property (nonatomic, strong) QMLeftMenuViewController *leftMenuViewController;
 
 @property (nonatomic, strong) QMContainersViewController *containersViewController;
 
-
 @property (nonatomic, strong) UIView *navView;
+
+@property (nonatomic) UIPanGestureRecognizer *showMenuPanGesture;
+
+@property (nonatomic) UIControl *lockContainerView;
 
 @end
 
@@ -30,9 +35,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [self setUpSubView];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setUpSubView];
+
 }
+
 
 - (void)setUpSubView
 {
@@ -45,16 +54,130 @@
 
     self.containersViewController = [[QMContainersViewController alloc] init];
     self.containersViewController.view.frame = self.view.bounds;
+    self.containersViewController.containersDelegate = self;
     [self.view addSubview:self.containersViewController.view];
     [self addChildViewController:self.containersViewController];
+    
+    
+    self.showMenuPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(showMenuPanGestureAction:)];
+    self.showMenuPanGesture.delegate = self;
+    [self.view addGestureRecognizer:self.showMenuPanGesture];
+    
+    
+    self.lockContainerView = [[UIControl alloc] initWithFrame:self.view.bounds];
+    [self.lockContainerView addTarget:self action:@selector(containersNavLeftButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    self.lockContainerView.userInteractionEnabled = NO;
+    self.lockContainerView.backgroundColor = [UIColor clearColor];
+    [self.containersViewController.view addSubview:self.lockContainerView];
+    
+    
+}
+//保证拖动手势和UIScrollView上的拖动手势互不影响
+-(BOOL)gestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer*)otherGestureRecognizer
+{
+    if (self.containersViewController.view.x == MENUMAXSHOWWIDTH) {
+        return YES;
+    }
+    
+    CGPoint tranPoint = [gestureRecognizer translationInView:self.view];
+
+    if ([self.containersViewController scrollOffsetXIsZero] && tranPoint.x > 0)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+
+
+}
+- (void)showMenuPanGestureAction:(UIPanGestureRecognizer *)panGestureRecognizer
+{
+    CGPoint translationPoint = [panGestureRecognizer translationInView:self.view];
+    CGPoint velocityPoint = [panGestureRecognizer velocityInView:self.view];
+    
+
+    
+    if (panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
+   
+    }
+    else if (panGestureRecognizer.state == UIGestureRecognizerStateChanged)
+    {
+        self.containersViewController.view.x += translationPoint.x;
+        if (self.containersViewController.view.x >= MENUMAXSHOWWIDTH) {
+            self.containersViewController.view.x = MENUMAXSHOWWIDTH;
+        }
+        if (self.containersViewController.view.x <=0) {
+            self.containersViewController.view.x = 0;
+        }
+        [panGestureRecognizer setTranslation:CGPointZero inView:self.view];
+    }
+    else
+    {
+        [self fixMenuAndMainContainer:velocityPoint];
+       
+    }
+ 
+}
+
+- (void)fixMenuAndMainContainer:(CGPoint)velocityPoint
+{
+
+    if (self.containersViewController.view.layer.animationKeys.count > 0) {
+        return;
+    }
+    [UIView animateWithDuration:0.2 animations:^{
+        CGFloat containerOrginX = self.containersViewController.view.x;
+        if (fabs(velocityPoint.x) < 250) {
+            if (containerOrginX <= MENUMAXSHOWWIDTH/2) {
+                self.containersViewController.view.x = 0;
+                self.lockContainerView.userInteractionEnabled = NO;
+            }
+            else
+            {
+                self.containersViewController.view.x = MENUMAXSHOWWIDTH;
+                self.lockContainerView.userInteractionEnabled = YES;
+            }
+        }else
+        {
+            if (velocityPoint.x < 0) {
+                self.containersViewController.view.x = 0;
+                self.lockContainerView.userInteractionEnabled = NO;
+            }else
+            {
+                self.containersViewController.view.x = MENUMAXSHOWWIDTH;
+                self.lockContainerView.userInteractionEnabled = YES;
+            }
+        }
+    }];
+  
 }
 
 
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)containersNavLeftButtonAction
 {
-    CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
-    self.containersViewController.view.x = touchPoint.x;
+    if (self.containersViewController.view.layer.animationKeys.count > 0) {
+        return;
+    }
+
+    if (self.containersViewController.view.x == MENUMAXSHOWWIDTH) {
+        [UIView animateWithDuration:0.4 animations:^{
+            self.containersViewController.view.x = 0;
+        }];
+    }else
+    {
+        [UIView animateWithDuration:0.4 animations:^{
+            self.containersViewController.view.x = MENUMAXSHOWWIDTH;
+        }];
+    }
+   
+   
+}
+
+- (void)containersNavRightButtonAction
+{
+
 }
 
 - (void)didReceiveMemoryWarning {
