@@ -123,4 +123,14 @@
 #define MAIN_TONE_COLOR  [UIColor colorWithRed:49 / 255.0 green:194 / 255.0 blue:100 / 255.0 alpha:1.0]
 #define SEARCH_BAR_COLOR  [UIColor colorWithRed:26 / 255.0 green:172 / 255.0 blue:90 / 255.0 alpha:1.0]
 
+
+#define QQMUSICRASPRIVATEKEY    @""
+
+
+#define QQMUSICFILEKEY  @""
+
+#define QQMUSICPUBLICKEY        @""
+
+#define NETSKEY   @""
+
 #endif /* QMPublicDefine_h */

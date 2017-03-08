@@ -21,7 +21,6 @@
     
     // Override point for customization after application launch.
     [self setUpWindow];
-    
     return YES;
 }
 

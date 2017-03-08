@@ -135,6 +135,8 @@
     self.mainScrollView.contentSize = CGSizeMake(CGRectGetMaxX(self.view.bounds)*2, 0);
     self.mainScrollView.pagingEnabled = YES;
     self.mainScrollView.delegate = self;
+    self.mainScrollView.showsHorizontalScrollIndicator = NO;
+    self.mainScrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.mainScrollView];
     
     

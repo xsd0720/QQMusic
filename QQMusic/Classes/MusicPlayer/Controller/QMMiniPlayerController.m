@@ -1,25 +1,22 @@
 //
-//  QMMineViewController.m
+//  QMMiniPlayerController.m
 //  QQMusic
 //
-//  Created by xwmedia01 on 2017/3/3.
+//  Created by xwmedia01 on 2017/3/8.
 //  Copyright © 2017年 xwmedia01. All rights reserved.
 //
 
-#import "QMMineViewController.h"
+#import "QMMiniPlayerController.h"
 
-@interface QMMineViewController ()
+@interface QMMiniPlayerController ()
 
 @end
 
-@implementation QMMineViewController
+@implementation QMMiniPlayerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor cyanColor];
-    
 }
 
 - (void)didReceiveMemoryWarning {

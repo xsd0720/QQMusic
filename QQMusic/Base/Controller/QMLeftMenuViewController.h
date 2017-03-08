@@ -7,7 +7,7 @@
 //
 
 #import "QMBaseViewController.h"
-
+#define MENUMAXSHOWWIDTH   (SCREEN_WIDTH*0.85)
 @interface QMLeftMenuViewController : QMBaseViewController
 
 
