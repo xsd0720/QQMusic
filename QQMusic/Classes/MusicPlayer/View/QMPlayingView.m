@@ -10,4 +10,9 @@
 
 @implementation QMPlayingView
 
+- (CGFloat)albumMode
+{
+    return 0;
+}
+
 @end

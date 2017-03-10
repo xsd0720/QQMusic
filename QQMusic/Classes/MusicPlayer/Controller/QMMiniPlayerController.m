@@ -7,16 +7,66 @@
 //
 
 #import "QMMiniPlayerController.h"
+#import "AudioPlayManager.h"
+#import "QMAudioPlayerViewController.h"
+@interface QMMiniPlayerController ()<QMMiniPlayerViewDelegate>
 
-@interface QMMiniPlayerController ()
+
+
+@property (nonatomic, strong) QMAudioPlayerViewController *audioPlayViewController;
 
 @end
 
 @implementation QMMiniPlayerController
 
+
++ (instancetype)sharedMiniPlayerController
+{
+    static dispatch_once_t onceToken;
+    static QMMiniPlayerController *shareInstance = nil;
+    dispatch_once(&onceToken, ^{
+        shareInstance = [[QMMiniPlayerController alloc] init];
+    });
+    return shareInstance;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.miniPlayerView = [[QMMiniPlayerView alloc] initWithFrame:self.view.bounds];
+    self.miniPlayerView.playingDelegate = self;
+    [self.view addSubview:self.miniPlayerView];
+    
+}
+
+- (void)showPlayingView
+{
+//    [self delayShowPlayingView];
+    if (self.miniDelegate && [self.miniDelegate respondsToSelector:@selector(showPlayingView)]) {
+        [self.miniDelegate showPlayingView];
+    }
+    
+}
+
+- (void)delayShowPlayingView
+{
+    [self miniPlayerShowPlayingView];
+}
+
+- (void)miniPlayerShowPlayingView
+{
+    self.audioPlayViewController = [[QMAudioPlayerViewController alloc] init];
+    [self.audioPlayViewController showPlayingView];
 }
 
 - (void)didReceiveMemoryWarning {

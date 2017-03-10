@@ -131,6 +131,6 @@
 
 #define QQMUSICPUBLICKEY        @""
 
-#define NETSKEY   @""
+#define NETSKEY   @"Lu6b7o0O2/6/51Xw6alR7Q=="
 
 #endif /* QMPublicDefine_h */

@@ -7,7 +7,20 @@
 //
 
 #import "QMBaseViewController.h"
+#import "QMMiniPlayerView.h"
+
+@protocol QMMiniPlayerControllerDelegate <NSObject>
+
+- (void)showPlayingView;
+
+@end
 
 @interface QMMiniPlayerController : QMBaseViewController
+
+@property (nonatomic, strong) QMMiniPlayerView *miniPlayerView;
+
+@property (nonatomic, strong) id<QMMiniPlayerControllerDelegate> miniDelegate;
+
++ (instancetype)sharedMiniPlayerController;
 
 @end

@@ -12,6 +12,7 @@
 #import "QMLeftMenuViewController.h"
 #import "QMContainersViewController.h"
 
+#import "QMMiniPlayerController.h"
 
 
 
@@ -34,16 +35,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    [self setNavigationBarHidden:YES];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setUpSubView];
 
-    
-    
-    
 }
 
 
@@ -69,7 +65,7 @@
     
     
     self.lockContainerView = [[UIControl alloc] initWithFrame:self.view.bounds];
-    [self.lockContainerView addTarget:self action:@selector(containersNavLeftButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.lockContainerView addTarget:self action:@selector(showSliderMenuAction) forControlEvents:UIControlEventTouchUpInside];
     self.lockContainerView.userInteractionEnabled = NO;
     self.lockContainerView.backgroundColor = [UIColor blackColor];
     self.lockContainerView.layer.opacity = 0;
@@ -177,7 +173,7 @@
 }
 
 
-- (void)containersNavLeftButtonAction
+- (void)showSliderMenuAction
 {
     if (self.containersViewController.view.x == MENUMAXSHOWWIDTH) {
         [self fixMenuAndMainContainer:CGPointMake(-500, 0)];

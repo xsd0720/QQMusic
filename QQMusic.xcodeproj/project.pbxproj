@@ -43,9 +43,17 @@
 		0C057C281E67FBA600B7A9CC /* QMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C241E67FBA600B7A9CC /* QMMainViewController.m */; };
 		0C057C291E67FBA600B7A9CC /* QMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C261E67FBA600B7A9CC /* QMNavigationController.m */; };
 		0C057C2F1E67FBD700B7A9CC /* QMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057C2E1E67FBD700B7A9CC /* QMSettingViewController.m */; };
+		0C0E25241E72554600758ABA /* QMRootTopBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25231E72554600758ABA /* QMRootTopBarViewController.m */; };
+		0C0E25271E72586F00758ABA /* QMAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25261E72586F00758ABA /* QMAudioPlayerViewController.m */; };
+		0C0E252B1E7258B600758ABA /* BETouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E252A1E7258B600758ABA /* BETouchView.m */; };
+		0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */; };
+		0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25331E728C7900758ABA /* AudioPlayManager.m */; };
+		0C0E25371E72947200758ABA /* ComHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25361E72947200758ABA /* ComHelper.m */; };
 		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
 		0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */; };
 		0C8871E81E69460A00A2D295 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */; };
+		0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E61E70ED76000D9A33 /* NDAES.m */; };
+		0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E91E7107D8000D9A33 /* Helper.m */; };
 		0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */; };
 		0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D421E6E4BD600628F55 /* AFSoundManager.m */; };
 		0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FA51E6FA51300B1280D /* QMMineViewController.m */; };
@@ -61,7 +69,6 @@
 		0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FCE1E6FFAD200B1280D /* QMPlayingView.m */; };
 		0CFE6FD21E6FFC8F00B1280D /* QMLandscapePlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FD11E6FFC8F00B1280D /* QMLandscapePlayingView.m */; };
 		0CFE6FD51E70076600B1280D /* QMMiniPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FD41E70076600B1280D /* QMMiniPlayerController.m */; };
-		0CFE6FD81E700AA200B1280D /* QMAudioPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FD71E700AA200B1280D /* QMAudioPlayerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,11 +147,27 @@
 		0C057C261E67FBA600B7A9CC /* QMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMNavigationController.m; sourceTree = "<group>"; };
 		0C057C2D1E67FBD700B7A9CC /* QMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMSettingViewController.h; sourceTree = "<group>"; };
 		0C057C2E1E67FBD700B7A9CC /* QMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMSettingViewController.m; sourceTree = "<group>"; };
+		0C0E25221E72554600758ABA /* QMRootTopBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMRootTopBarViewController.h; sourceTree = "<group>"; };
+		0C0E25231E72554600758ABA /* QMRootTopBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMRootTopBarViewController.m; sourceTree = "<group>"; };
+		0C0E25251E72586F00758ABA /* QMAudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAudioPlayerViewController.h; sourceTree = "<group>"; };
+		0C0E25261E72586F00758ABA /* QMAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAudioPlayerViewController.m; sourceTree = "<group>"; };
+		0C0E25291E7258B600758ABA /* BETouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETouchView.h; sourceTree = "<group>"; };
+		0C0E252A1E7258B600758ABA /* BETouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETouchView.m; sourceTree = "<group>"; };
+		0C0E252C1E7279B300758ABA /* QMMiniPlayerPlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMiniPlayerPlayButton.h; sourceTree = "<group>"; };
+		0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMiniPlayerPlayButton.m; sourceTree = "<group>"; };
+		0C0E25321E728C7900758ABA /* AudioPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayManager.h; sourceTree = "<group>"; };
+		0C0E25331E728C7900758ABA /* AudioPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayManager.m; sourceTree = "<group>"; };
+		0C0E25351E72947200758ABA /* ComHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComHelper.h; sourceTree = "<group>"; };
+		0C0E25361E72947200758ABA /* ComHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComHelper.m; sourceTree = "<group>"; };
 		0C8871E01E69440600A2D295 /* QMContainersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMContainersViewController.h; sourceTree = "<group>"; };
 		0C8871E11E69440600A2D295 /* QMContainersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMContainersViewController.m; sourceTree = "<group>"; };
 		0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeftMenuViewController.h; sourceTree = "<group>"; };
 		0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLeftMenuViewController.m; sourceTree = "<group>"; };
 		0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		0CCA27E51E70ED76000D9A33 /* NDAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAES.h; sourceTree = "<group>"; };
+		0CCA27E61E70ED76000D9A33 /* NDAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAES.m; sourceTree = "<group>"; };
+		0CCA27E81E7107D8000D9A33 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		0CCA27E91E7107D8000D9A33 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		0CE78D3F1E6E4BD600628F55 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
 		0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
 		0CE78D411E6E4BD600628F55 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
@@ -175,8 +198,6 @@
 		0CFE6FD11E6FFC8F00B1280D /* QMLandscapePlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLandscapePlayingView.m; sourceTree = "<group>"; };
 		0CFE6FD31E70076600B1280D /* QMMiniPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMiniPlayerController.h; sourceTree = "<group>"; };
 		0CFE6FD41E70076600B1280D /* QMMiniPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMiniPlayerController.m; sourceTree = "<group>"; };
-		0CFE6FD61E700AA200B1280D /* QMAudioPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAudioPlayerVC.h; sourceTree = "<group>"; };
-		0CFE6FD71E700AA200B1280D /* QMAudioPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAudioPlayerVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +270,7 @@
 		0C057BA91E67EC5900B7A9CC /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0C0E25281E7258A500758ABA /* View */,
 				0C057C201E67FBA600B7A9CC /* Controller */,
 			);
 			path = Base;
@@ -257,6 +279,7 @@
 		0C057BAA1E67EC5900B7A9CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0C0E251E1E72551500758ABA /* MusicContainer */,
 				0CFE6FC31E6FFA1800B1280D /* MusicPlayer */,
 				0CFE6FA21E6FA51300B1280D /* MusicMine */,
 				0CFE6FA81E6FA51300B1280D /* MusicLibrary */,
@@ -309,6 +332,10 @@
 				0CFE6FB11E6FA54200B1280D /* NuRSAKey.m */,
 				0CFE6FB31E6FB04000B1280D /* RSA.h */,
 				0CFE6FB41E6FB04000B1280D /* RSA.m */,
+				0CCA27E51E70ED76000D9A33 /* NDAES.h */,
+				0CCA27E61E70ED76000D9A33 /* NDAES.m */,
+				0CCA27E81E7107D8000D9A33 /* Helper.h */,
+				0CCA27E91E7107D8000D9A33 /* Helper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -464,6 +491,48 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0C0E251E1E72551500758ABA /* MusicContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E251F1E72551500758ABA /* Controller */,
+				0C0E25201E72551500758ABA /* Model */,
+				0C0E25211E72551500758ABA /* View */,
+			);
+			path = MusicContainer;
+			sourceTree = "<group>";
+		};
+		0C0E251F1E72551500758ABA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E25221E72554600758ABA /* QMRootTopBarViewController.h */,
+				0C0E25231E72554600758ABA /* QMRootTopBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C0E25201E72551500758ABA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C0E25211E72551500758ABA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C0E25281E7258A500758ABA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E25291E7258B600758ABA /* BETouchView.h */,
+				0C0E252A1E7258B600758ABA /* BETouchView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0C8871E61E69460300A2D295 /* StaticImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +636,8 @@
 				0CFE6FCE1E6FFAD200B1280D /* QMPlayingView.m */,
 				0CFE6FD01E6FFC8F00B1280D /* QMLandscapePlayingView.h */,
 				0CFE6FD11E6FFC8F00B1280D /* QMLandscapePlayingView.m */,
+				0C0E252C1E7279B300758ABA /* QMMiniPlayerPlayButton.h */,
+				0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +645,10 @@
 		0CFE6FC51E6FFA3100B1280D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C0E25321E728C7900758ABA /* AudioPlayManager.h */,
+				0C0E25331E728C7900758ABA /* AudioPlayManager.m */,
+				0C0E25351E72947200758ABA /* ComHelper.h */,
+				0C0E25361E72947200758ABA /* ComHelper.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -583,8 +658,8 @@
 			children = (
 				0CFE6FD31E70076600B1280D /* QMMiniPlayerController.h */,
 				0CFE6FD41E70076600B1280D /* QMMiniPlayerController.m */,
-				0CFE6FD61E700AA200B1280D /* QMAudioPlayerVC.h */,
-				0CFE6FD71E700AA200B1280D /* QMAudioPlayerVC.m */,
+				0C0E25251E72586F00758ABA /* QMAudioPlayerViewController.h */,
+				0C0E25261E72586F00758ABA /* QMAudioPlayerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -676,7 +751,9 @@
 				0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */,
 				0C057BE61E67ECCF00B7A9CC /* SDWebImageDownloader.m in Sources */,
 				0C057BEE1E67ECCF00B7A9CC /* UIImageView+HighlightedWebCache.m in Sources */,
+				0C0E25241E72554600758ABA /* QMRootTopBarViewController.m in Sources */,
 				0C057C271E67FBA600B7A9CC /* QMBaseViewController.m in Sources */,
+				0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
 				0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */,
@@ -689,6 +766,7 @@
 				0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */,
 				0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */,
 				0C057BE41E67ECCF00B7A9CC /* SDWebImageCompat.m in Sources */,
+				0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */,
 				0CFE6FD21E6FFC8F00B1280D /* QMLandscapePlayingView.m in Sources */,
 				0C057BA71E67EBF000B7A9CC /* main.m in Sources */,
 				0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */,
@@ -697,21 +775,25 @@
 				0C057BE71E67ECCF00B7A9CC /* SDWebImageDownloaderOperation.m in Sources */,
 				0C057C2F1E67FBD700B7A9CC /* QMSettingViewController.m in Sources */,
 				0C057BE81E67ECCF00B7A9CC /* SDWebImageManager.m in Sources */,
+				0C0E25371E72947200758ABA /* ComHelper.m in Sources */,
+				0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */,
 				0C057BEC1E67ECCF00B7A9CC /* UIImage+MultiFormat.m in Sources */,
 				0CFE6FBB1E6FE17500B1280D /* SecurityUtil.m in Sources */,
 				0C057BE91E67ECCF00B7A9CC /* SDWebImagePrefetcher.m in Sources */,
+				0C0E25271E72586F00758ABA /* QMAudioPlayerViewController.m in Sources */,
 				0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */,
 				0CFE6FB51E6FB04100B1280D /* RSA.m in Sources */,
 				0C057BE11E67ECCF00B7A9CC /* MKAnnotationView+WebCache.m in Sources */,
 				0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */,
 				0C057BF01E67ECCF00B7A9CC /* UIView+WebCacheOperation.m in Sources */,
 				0C057BE31E67ECCF00B7A9CC /* SDImageCache.m in Sources */,
-				0CFE6FD81E700AA200B1280D /* QMAudioPlayerVC.m in Sources */,
+				0C0E252B1E7258B600758ABA /* BETouchView.m in Sources */,
 				0CFE6FD51E70076600B1280D /* QMMiniPlayerController.m in Sources */,
 				0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */,
 				0C057BF51E67ECCF00B7A9CC /* AFURLResponseSerialization.m in Sources */,
 				0CFE6FB21E6FA54200B1280D /* NuRSAKey.m in Sources */,
 				0CFE6FC11E6FE18100B1280D /* GTMBase64.m in Sources */,
+				0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

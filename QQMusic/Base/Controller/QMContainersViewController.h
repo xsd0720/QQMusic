@@ -10,7 +10,7 @@
 
 @protocol QMContainersViewControllerDelegate <NSObject>
 
-- (void)containersNavLeftButtonAction;
+- (void)showSliderMenuAction;
 
 - (void)containersNavRightButtonAction;
 

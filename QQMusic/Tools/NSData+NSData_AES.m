@@ -79,4 +79,71 @@
     return nil;
 }
 
+//http://blog.csdn.net/autom_lishun/article/details/52586429
+- (NSString*)desEncode:(NSString *)originStr key:(NSString *)key
+{
+    // 1, 将 str装换成 base64数据
+    NSData * baseData =[originStr dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    size_t dataOutOffset = 0;
+    
+    NSUInteger dataLength = baseData.length + 10 +[key dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES].length;
+    unsigned char buffer[dataLength];
+    memset(buffer, 0,sizeof(char));
+    
+    CCCryptorStatus cryptorStatus=CCCrypt( kCCEncrypt,        // 解密还是解密
+                                          kCCAlgorithmDES,  // 加密的方式 DES， 3DES
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          [key UTF8String],  //
+                                          kCCKeySizeDES,    // kCCKeySizeDES
+                                          nil,               //
+                                          [baseData bytes],  //
+                                          [baseData length], //
+                                          buffer,             // 注意接收加密的buffer的大小
+                                          dataLength,         //
+                                          &dataOutOffset      //
+                                          );
+    NSString * encoding=nil;
+    if (cryptorStatus == 0) {
+        NSData * data = [NSData dataWithBytes:buffer length:dataOutOffset];
+        encoding = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        NSLog(@"加密后的串：[%@]", encoding);
+    }else
+        NSLog(@"DES加密失败！%d",cryptorStatus);
+    return encoding;
+}
+
+
+- (NSString *)DesEncoding:(NSString *)baseStr key:(NSString*)key
+{
+    NSData * baseData =  [[NSData alloc] initWithBase64EncodedString:baseStr options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSUInteger dataLength = baseData.length+100; // 注意key 与data 的长度
+    char buffer[dataLength];
+    memset(buffer, 0,sizeof(char));
+    size_t dataOffset = 0;
+    CCCryptorStatus status =CCCrypt(kCCDecrypt,
+                                    kCCAlgorithmDES,
+                                    kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                    [key UTF8String],
+                                    kCCKeySizeDES,
+                                    nil,
+                                    [baseData bytes],
+                                    [baseData length],
+                                    buffer,
+                                    dataLength,
+                                    &dataOffset
+                                    );
+    
+    NSString * decodingStr =nil;
+    if (status == 0) {
+        NSData * data = [[NSData alloc]initWithBytes:buffer length:dataOffset];
+        //        decodingStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        decodingStr =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"解密后的传：[%@]", [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
+    }
+    else
+        NSLog(@"解密失败；");
+    return decodingStr;
+}
+
+
 @end
