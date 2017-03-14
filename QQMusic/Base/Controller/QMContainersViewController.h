@@ -12,7 +12,7 @@
 
 - (void)showSliderMenuAction;
 
-- (void)containersNavRightButtonAction;
+- (void)musichallAction;
 
 @end
 

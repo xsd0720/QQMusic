@@ -43,7 +43,6 @@
        
     }
 
-
     return psss;
     
     
@@ -62,6 +61,11 @@
         [data appendBytes:&intValue length:1];
     }
     return data;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,12 @@
 
 @interface BETouchView : UIView
 
+@property (nonatomic, strong) UIView *leftView;
+
+@property (nonatomic, strong) UIView *centerView;
+
+@property (nonatomic, strong) UIView *rightView;
+
+- (void)preLayoutSubView;
+
 @end

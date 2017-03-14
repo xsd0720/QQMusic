@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C057B971E67EB1E00B7A9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C057B961E67EB1E00B7A9CC /* Assets.xcassets */; };
-		0C057B9A1E67EB1E00B7A9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C057B981E67EB1E00B7A9CC /* LaunchScreen.storyboard */; };
+		0C057B971E67EB1E00B7A9CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C057B961E67EB1E00B7A9CC /* Images.xcassets */; };
 		0C057BA61E67EBF000B7A9CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C057BA21E67EBF000B7A9CC /* Info.plist */; };
 		0C057BA71E67EBF000B7A9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057BA31E67EBF000B7A9CC /* main.m */; };
 		0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C057BA51E67EBF000B7A9CC /* QMAppDelegate.m */; };
@@ -49,13 +48,19 @@
 		0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */; };
 		0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25331E728C7900758ABA /* AudioPlayManager.m */; };
 		0C0E25371E72947200758ABA /* ComHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25361E72947200758ABA /* ComHelper.m */; };
+		0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */; };
+		0C2B2ACB1E779C61006D0378 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B2AC91E779A3F006D0378 /* libxml2.tbd */; };
 		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
 		0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */; };
-		0C8871E81E69460A00A2D295 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */; };
 		0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E61E70ED76000D9A33 /* NDAES.m */; };
 		0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E91E7107D8000D9A33 /* Helper.m */; };
+		0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA96D31E778E3100DF8EEC /* BENoTouchView.m */; };
 		0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */; };
 		0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D421E6E4BD600628F55 /* AFSoundManager.m */; };
+		0CF56EB01E76358400E114C8 /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */; };
+		0CF56EB31E76492D00E114C8 /* QMMiniPlayerScrollItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EB21E76492D00E114C8 /* QMMiniPlayerScrollItem.m */; };
+		0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EB81E76996600E114C8 /* AutoScrollTextView.m */; };
+		0CF56EBC1E76A97100E114C8 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EBB1E76A97100E114C8 /* AutoScrollLabel.m */; };
 		0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FA51E6FA51300B1280D /* QMMineViewController.m */; };
 		0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FAB1E6FA51300B1280D /* QMMusicLibraryViewController.m */; };
 		0CFE6FB21E6FA54200B1280D /* NuRSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FB11E6FA54200B1280D /* NuRSAKey.m */; };
@@ -73,8 +78,7 @@
 
 /* Begin PBXFileReference section */
 		0C057B871E67EB1E00B7A9CC /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C057B961E67EB1E00B7A9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C057B991E67EB1E00B7A9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C057B961E67EB1E00B7A9CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C057BA21E67EBF000B7A9CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C057BA31E67EBF000B7A9CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C057BA41E67EBF000B7A9CC /* QMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAppDelegate.h; sourceTree = "<group>"; };
@@ -159,19 +163,31 @@
 		0C0E25331E728C7900758ABA /* AudioPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayManager.m; sourceTree = "<group>"; };
 		0C0E25351E72947200758ABA /* ComHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComHelper.h; sourceTree = "<group>"; };
 		0C0E25361E72947200758ABA /* ComHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComHelper.m; sourceTree = "<group>"; };
+		0C2B2AC31E779194006D0378 /* QMDataSourceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMDataSourceTool.h; sourceTree = "<group>"; };
+		0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMDataSourceTool.m; sourceTree = "<group>"; };
+		0C2B2AC91E779A3F006D0378 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		0C8871E01E69440600A2D295 /* QMContainersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMContainersViewController.h; sourceTree = "<group>"; };
 		0C8871E11E69440600A2D295 /* QMContainersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMContainersViewController.m; sourceTree = "<group>"; };
 		0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeftMenuViewController.h; sourceTree = "<group>"; };
 		0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLeftMenuViewController.m; sourceTree = "<group>"; };
-		0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		0CCA27E51E70ED76000D9A33 /* NDAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAES.h; sourceTree = "<group>"; };
 		0CCA27E61E70ED76000D9A33 /* NDAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAES.m; sourceTree = "<group>"; };
 		0CCA27E81E7107D8000D9A33 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		0CCA27E91E7107D8000D9A33 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		0CDA96D21E778E3100DF8EEC /* BENoTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BENoTouchView.h; sourceTree = "<group>"; };
+		0CDA96D31E778E3100DF8EEC /* BENoTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENoTouchView.m; sourceTree = "<group>"; };
 		0CE78D3F1E6E4BD600628F55 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
 		0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
 		0CE78D411E6E4BD600628F55 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
 		0CE78D421E6E4BD600628F55 /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
+		0CF56EAE1E76358400E114C8 /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
+		0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouch.m"; sourceTree = "<group>"; };
+		0CF56EB11E76492D00E114C8 /* QMMiniPlayerScrollItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMiniPlayerScrollItem.h; sourceTree = "<group>"; };
+		0CF56EB21E76492D00E114C8 /* QMMiniPlayerScrollItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMiniPlayerScrollItem.m; sourceTree = "<group>"; };
+		0CF56EB71E76996600E114C8 /* AutoScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollTextView.h; sourceTree = "<group>"; };
+		0CF56EB81E76996600E114C8 /* AutoScrollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollTextView.m; sourceTree = "<group>"; };
+		0CF56EBA1E76A97100E114C8 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
+		0CF56EBB1E76A97100E114C8 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
 		0CFE6FA41E6FA51300B1280D /* QMMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMineViewController.h; sourceTree = "<group>"; };
 		0CFE6FA51E6FA51300B1280D /* QMMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMineViewController.m; sourceTree = "<group>"; };
 		0CFE6FAA1E6FA51300B1280D /* QMMusicLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMusicLibraryViewController.h; sourceTree = "<group>"; };
@@ -205,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2B2ACB1E779C61006D0378 /* libxml2.tbd in Frameworks */,
 				0CFE6FB81E6FCB7800B1280D /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,8 +258,7 @@
 				0C057BAE1E67EC5900B7A9CC /* Tools */,
 				0C057BAF1E67EC5900B7A9CC /* Common */,
 				0C057BA11E67EBF000B7A9CC /* Main */,
-				0C057B961E67EB1E00B7A9CC /* Assets.xcassets */,
-				0C057B981E67EB1E00B7A9CC /* LaunchScreen.storyboard */,
+				0C057B961E67EB1E00B7A9CC /* Images.xcassets */,
 				0C057B8A1E67EB1E00B7A9CC /* Supporting Files */,
 			);
 			path = QQMusic;
@@ -301,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				0C057C031E67F5CF00B7A9CC /* UIViewCategory */,
+				0CF56EAE1E76358400E114C8 /* UIScrollView+UITouch.h */,
+				0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -336,6 +354,8 @@
 				0CCA27E61E70ED76000D9A33 /* NDAES.m */,
 				0CCA27E81E7107D8000D9A33 /* Helper.h */,
 				0CCA27E91E7107D8000D9A33 /* Helper.m */,
+				0C2B2AC31E779194006D0378 /* QMDataSourceTool.h */,
+				0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -536,7 +556,6 @@
 		0C8871E61E69460300A2D295 /* StaticImage */ = {
 			isa = PBXGroup;
 			children = (
-				0C8871E71E69460A00A2D295 /* LaunchImage-568h@2x.png */,
 			);
 			path = StaticImage;
 			sourceTree = "<group>";
@@ -610,6 +629,7 @@
 		0CFE6FB61E6FCB7800B1280D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C2B2AC91E779A3F006D0378 /* libxml2.tbd */,
 				0CFE6FB71E6FCB7800B1280D /* ReplayKit.framework */,
 			);
 			name = Frameworks;
@@ -638,6 +658,14 @@
 				0CFE6FD11E6FFC8F00B1280D /* QMLandscapePlayingView.m */,
 				0C0E252C1E7279B300758ABA /* QMMiniPlayerPlayButton.h */,
 				0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */,
+				0CF56EB11E76492D00E114C8 /* QMMiniPlayerScrollItem.h */,
+				0CF56EB21E76492D00E114C8 /* QMMiniPlayerScrollItem.m */,
+				0CF56EB71E76996600E114C8 /* AutoScrollTextView.h */,
+				0CF56EB81E76996600E114C8 /* AutoScrollTextView.m */,
+				0CF56EBA1E76A97100E114C8 /* AutoScrollLabel.h */,
+				0CF56EBB1E76A97100E114C8 /* AutoScrollLabel.m */,
+				0CDA96D21E778E3100DF8EEC /* BENoTouchView.h */,
+				0CDA96D31E778E3100DF8EEC /* BENoTouchView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -724,9 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C057BA61E67EBF000B7A9CC /* Info.plist in Resources */,
-				0C057B9A1E67EB1E00B7A9CC /* LaunchScreen.storyboard in Resources */,
-				0C8871E81E69460A00A2D295 /* LaunchImage-568h@2x.png in Resources */,
-				0C057B971E67EB1E00B7A9CC /* Assets.xcassets in Resources */,
+				0C057B971E67EB1E00B7A9CC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +782,7 @@
 				0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
+				0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */,
 				0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */,
 				0C057BF41E67ECCF00B7A9CC /* AFURLRequestSerialization.m in Sources */,
 				0C057BF31E67ECCF00B7A9CC /* AFSecurityPolicy.m in Sources */,
@@ -766,8 +793,10 @@
 				0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */,
 				0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */,
 				0C057BE41E67ECCF00B7A9CC /* SDWebImageCompat.m in Sources */,
+				0CF56EB01E76358400E114C8 /* UIScrollView+UITouch.m in Sources */,
 				0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */,
 				0CFE6FD21E6FFC8F00B1280D /* QMLandscapePlayingView.m in Sources */,
+				0CF56EBC1E76A97100E114C8 /* AutoScrollLabel.m in Sources */,
 				0C057BA71E67EBF000B7A9CC /* main.m in Sources */,
 				0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */,
 				0C057BED1E67ECCF00B7A9CC /* UIImage+WebP.m in Sources */,
@@ -784,6 +813,7 @@
 				0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */,
 				0CFE6FB51E6FB04100B1280D /* RSA.m in Sources */,
 				0C057BE11E67ECCF00B7A9CC /* MKAnnotationView+WebCache.m in Sources */,
+				0CF56EB31E76492D00E114C8 /* QMMiniPlayerScrollItem.m in Sources */,
 				0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */,
 				0C057BF01E67ECCF00B7A9CC /* UIView+WebCacheOperation.m in Sources */,
 				0C057BE31E67ECCF00B7A9CC /* SDImageCache.m in Sources */,
@@ -793,22 +823,13 @@
 				0C057BF51E67ECCF00B7A9CC /* AFURLResponseSerialization.m in Sources */,
 				0CFE6FB21E6FA54200B1280D /* NuRSAKey.m in Sources */,
 				0CFE6FC11E6FE18100B1280D /* GTMBase64.m in Sources */,
+				0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */,
+				0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */,
 				0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0C057B981E67EB1E00B7A9CC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C057B991E67EB1E00B7A9CC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0C057B9C1E67EB1E00B7A9CC /* Debug */ = {
@@ -911,11 +932,13 @@
 				INFOPLIST_FILE = "$(SRCROOT)/QQMusic/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.faiwong.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4b89cad4-4d27-44a1-b9d3-4cc1b1159141";
 				PROVISIONING_PROFILE_SPECIFIER = lilworldDevelopment;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 			};
 			name = Debug;
 		};
@@ -929,9 +952,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/QQMusic/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.faiwong.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 			};
 			name = Release;
 		};

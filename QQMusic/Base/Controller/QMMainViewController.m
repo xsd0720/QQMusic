@@ -14,7 +14,7 @@
 
 #import "QMMiniPlayerController.h"
 
-
+#import "QMDataSourceTool.h"
 
 @interface QMMainViewController ()<UIGestureRecognizerDelegate, QMContainersViewControllerDelegate>
 
@@ -103,9 +103,7 @@
 {
     CGPoint translationPoint = [panGestureRecognizer translationInView:self.view];
     CGPoint velocityPoint = [panGestureRecognizer velocityInView:self.view];
-    
 
-    
     if (panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
    
     }
@@ -130,9 +128,6 @@
         [self fixMenuAndMainContainer:velocityPoint];
        
     }
-    
-    
- 
 }
 
 - (void)fixMenuAndMainContainer:(CGPoint)velocityPoint
@@ -168,6 +163,8 @@
 
         self.leftMenuViewController.view.x = -MENUMAXSHOWWIDTH/2 + self.containersViewController.view.x/2;
         self.lockContainerView.layer.opacity = 0.3 * self.containersViewController.view.x/MENUMAXSHOWWIDTH;
+        
+        [self setNeedsStatusBarAppearanceUpdate];
     }];
   
 }
@@ -184,9 +181,18 @@
     }
 }
 
-- (void)containersNavRightButtonAction
+- (void)musichallAction
 {
+    [QMDataSourceTool start];
+}
 
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    if (self.containersViewController.view.x == 0) {
+        return UIStatusBarStyleLightContent;
+    }
+    return UIStatusBarStyleDefault;
 }
 
 - (void)didReceiveMemoryWarning {

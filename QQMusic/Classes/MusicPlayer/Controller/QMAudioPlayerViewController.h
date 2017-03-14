@@ -8,9 +8,12 @@
 
 #import "QMBaseViewController.h"
 
+#define CURRENTALBUMVIEWTAG         101
+
 @interface QMAudioPlayerViewController : QMBaseViewController
+
 
 - (void)initAudioPlayerUIWhenInit;
 
-- (void)showPlayingView;
+- (void)showPlayingViewAnimation;
 @end

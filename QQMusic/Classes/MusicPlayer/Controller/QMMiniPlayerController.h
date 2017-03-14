@@ -11,7 +11,7 @@
 
 @protocol QMMiniPlayerControllerDelegate <NSObject>
 
-- (void)showPlayingView;
+- (void)miniPlayControllerTouchEndAction;
 
 @end
 
@@ -22,5 +22,8 @@
 @property (nonatomic, strong) id<QMMiniPlayerControllerDelegate> miniDelegate;
 
 + (instancetype)sharedMiniPlayerController;
+
+- (UIImageView *)playingSongAlbumImageView;
+
 
 @end

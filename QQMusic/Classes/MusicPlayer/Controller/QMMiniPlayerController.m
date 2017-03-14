@@ -11,10 +11,6 @@
 #import "QMAudioPlayerViewController.h"
 @interface QMMiniPlayerController ()<QMMiniPlayerViewDelegate>
 
-
-
-@property (nonatomic, strong) QMAudioPlayerViewController *audioPlayViewController;
-
 @end
 
 @implementation QMMiniPlayerController
@@ -49,24 +45,17 @@
     
 }
 
-- (void)showPlayingView
+- (UIImageView *)playingSongAlbumImageView
 {
-//    [self delayShowPlayingView];
-    if (self.miniDelegate && [self.miniDelegate respondsToSelector:@selector(showPlayingView)]) {
-        [self.miniDelegate showPlayingView];
+    return [self.miniPlayerView playingSongAlbumImageView];
+}
+
+- (void)miniPlayViewTouchEndAction
+{
+    if (self.miniDelegate && [self.miniDelegate respondsToSelector:@selector(miniPlayControllerTouchEndAction)]) {
+        [self.miniDelegate miniPlayControllerTouchEndAction];
     }
     
-}
-
-- (void)delayShowPlayingView
-{
-    [self miniPlayerShowPlayingView];
-}
-
-- (void)miniPlayerShowPlayingView
-{
-    self.audioPlayViewController = [[QMAudioPlayerViewController alloc] init];
-    [self.audioPlayViewController showPlayingView];
 }
 
 - (void)didReceiveMemoryWarning {

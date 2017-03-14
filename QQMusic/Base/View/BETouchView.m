@@ -10,12 +10,53 @@
 
 @implementation BETouchView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = MAIN_TONE_COLOR;
+    }
+    return self;
 }
-*/
+
+- (void)setLeftView:(UIView *)leftView
+{
+    _leftView = leftView;
+    [self addSubview:_leftView];
+}
+
+- (void)setCenterView:(UIView *)centerView
+{
+    _centerView = centerView;
+    [self addSubview:_centerView];
+}
+
+- (void)setRightView:(UIView *)rightView
+{
+    _rightView = rightView;
+    [self addSubview:_rightView];
+}
+
+- (void)preLayoutSubView
+{
+    if (_leftView) {
+        _leftView.frame = CGRectMake(0, SYS_STATUSBAR_HEIGHT, CGRectGetMaxX(self.leftView.bounds), CGRectGetMaxY(self.leftView.bounds));
+    }
+    
+    if (_rightView) {
+        _rightView.frame = CGRectMake(CGRectGetMaxX(self.bounds)-CGRectGetMaxX(self.rightView.bounds), SYS_STATUSBAR_HEIGHT, CGRectGetMaxX(self.rightView.bounds), CGRectGetMaxY(self.rightView.bounds));
+    }
+    
+    if (_centerView) {
+        _centerView.frame = CGRectMake(0, SYS_STATUSBAR_HEIGHT, CGRectGetMaxX(self.bounds)-CGRectGetMaxX(self.leftView.bounds)-CGRectGetMaxX(self.rightView.bounds), CGRectGetMaxY(self.centerView.bounds));
+        _centerView.centerX = self.bounds.size.width/2;
+    }
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+  
+}
 
 @end

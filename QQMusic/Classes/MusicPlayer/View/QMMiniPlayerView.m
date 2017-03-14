@@ -8,6 +8,8 @@
 
 #import "QMMiniPlayerView.h"
 
+
+
 @interface QMMiniPlayerView()<UIScrollViewDelegate>
 
 @property (nonatomic) NSMutableArray *songInfoViewArray;
@@ -37,11 +39,7 @@
 @property (nonatomic, strong) UIButton *emptyPlayButton;
 @property (nonatomic, strong) UIButton *emptyListButton;
 
-
-
 @property (nonatomic) CALayer *gradientLayer;
-
-
 
 @end
 
@@ -99,9 +97,11 @@
 }
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self touchEndAction];
+    if (self.playingDelegate && [self.playingDelegate respondsToSelector:@selector(miniPlayViewTouchEndAction)]) {
+        [self.playingDelegate miniPlayViewTouchEndAction];
+    }
 }
 
 - (void)createCustomButtonByImageName:(NSString *)imageName hilightedImageName:(NSString *)hilightedImageName selectedImageName:(NSString *)selectedImageName hilightedSelectedImageName:(NSString *)hilightedSelectedImageName disabledImageName:(NSString *)disabledImageName frame:(CGRect *)frame
@@ -275,12 +275,6 @@
     return self.playSongButton;
 }
 
-- (void)touchEndAction
-{
-    if (self.playingDelegate && [self.playingDelegate respondsToSelector:@selector(showPlayingView)]) {
-        [self.playingDelegate showPlayingView];
-    }
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

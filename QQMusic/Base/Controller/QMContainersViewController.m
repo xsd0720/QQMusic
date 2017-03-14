@@ -10,15 +10,13 @@
 #import "QMRootTopBarViewController.h"
 #import "QMMiniPlayerController.h"
 #import "QMAudioPlayerViewController.h"
-@interface QMContainersViewController ()<QMRootTopBarViewControllerDelegate, QMMiniPlayerViewDelegate>
+@interface QMContainersViewController ()<QMRootTopBarViewControllerDelegate, QMMiniPlayerControllerDelegate, QMRootTopBarViewControllerDelegate>
 
 @property (nonatomic, strong) QMRootTopBarViewController *rootTopBarViewController;
 
 @property (nonatomic, strong) QMMiniPlayerController *miniPlayerController;
 
 @property (nonatomic, strong) QMAudioPlayerViewController *audioPlayerViewController;
-
-
 
 @end
 
@@ -37,9 +35,9 @@
 {
     self.rootTopBarViewController = [[QMRootTopBarViewController alloc] init];
     self.rootTopBarViewController.view.frame = self.view.bounds;
+    self.rootTopBarViewController.rootTopBarDelegate = self;
     [self.view addSubview:self.rootTopBarViewController.view];
     [self addChildViewController:self.rootTopBarViewController];
-    
     
     
     self.miniPlayerController = [[QMMiniPlayerController alloc] init];
@@ -50,19 +48,12 @@
     
 }
 
-- (QMAudioPlayerViewController *)audioPlayerViewController
-{
-    if (!_audioPlayerViewController) {
-        _audioPlayerViewController = [[QMAudioPlayerViewController alloc] init];
-    }
-    return _audioPlayerViewController;
-}
-
 - (BOOL)scrollOffsetXIsZero
 {
     return [self.rootTopBarViewController scrollOffsetXIsZero];
 }
 
+//SHOW SLIDER MENU
 - (void)showSliderMenuAction
 {
     if (self.containersDelegate && [self.containersDelegate respondsToSelector:@selector(showSliderMenuAction)]) {
@@ -70,26 +61,71 @@
     }
 }
 
-//- (void)addVCAsSubViewInVC:(id)arg2 inView:(id)arg3 subVC:(id)arg4
-//{
-//    [self addChildViewController:self.]
-//}
-- (void)showPlayingView
+- (void)musichallAction
 {
-    [self showAudioPlayingView];
+    if (self.containersDelegate && [self.containersDelegate respondsToSelector:@selector(musichallAction)]) {
+        [self.containersDelegate musichallAction];
+    }
 }
 
-- (void)showAudioPlayingView
+- (void)miniPlayControllerTouchEndAction
 {
-    UIButton *bb = [self.miniPlayerController.miniPlayerView playingSongAlbumImageView];
-  CGRect r =   [self.audioPlayerViewController.view convertRect:bb.frame fromView:self.miniPlayerController.miniPlayerView];
-    [bb setFrame:r];
-    [self.view addSubview:self.audioPlayerViewController.view];
-    [self.audioPlayerViewController.view addSubview:bb];
-    [self addChildViewController:self.audioPlayerViewController];
+
+    self.audioPlayerViewController = [[QMAudioPlayerViewController alloc] init];
     
-    [self.view addSubview:self.audioPlayerViewController.view];
+    [self presentViewController:self.audioPlayerViewController animated:YES completion:nil];
+    
+//    [self.view addSubview:self.audioPlayerViewController.view];
+//    [self addChildViewController:self.audioPlayerViewController];
+//    
+//    
+//    UIImageView *currentAlbumImageView = [self.miniPlayerController playingSongAlbumImageView];
+//    if (!currentAlbumImageView) {
+//        return;
+//    }
+//    CGRect willShowRect = [self.audioPlayerViewController.view convertRect:currentAlbumImageView.frame fromView:self.miniPlayerController.miniPlayerView];
+//    currentAlbumImageView.tag = 101;
+//    [currentAlbumImageView setFrame:willShowRect];
+//    [self.audioPlayerViewController.view addSubview:currentAlbumImageView];
+//    
+//    
+//    [self.audioPlayerViewController showPlayingViewAnimation];
+    
+    
+    
+//    //start animation
+
+ 
+    //    //透明度变化
+//    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+//    opacityAnimation.fromValue = [NSNumber numberWithFloat:0];
+//    opacityAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+//    opacityAnimation.duration = 0.3f;
+//    opacityAnimation.autoreverses = NO;   //是否重播，原动画的倒播
+//    [self.audioPlayerViewController.view.layer addAnimation:opacityAnimation forKey:@"opcity"];
+    
+    
+//    //位置移动
+//    CABasicAnimation *positionAnimation  = [CABasicAnimation animationWithKeyPath:@"position"];
+//    positionAnimation.fromValue =  [NSValue valueWithCGPoint: currentAlbumImageView.layer.position];
+//    positionAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH/2, 100)];
+//    
+//    //缩放动画
+//    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//    scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+//    scaleAnimation.toValue = [NSNumber numberWithFloat:8.0];
+//    scaleAnimation.duration = 0.3f;
+//    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    
+//    //组合动画
+//    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+//    animationGroup.duration = 0.3f;
+//    animationGroup.autoreverses = NO;   //是否重播，原动画的倒播
+//    animationGroup.repeatCount = NSNotFound;//HUGE_VALF;	 //HUGE_VALF,源自math.h
+//    [animationGroup setAnimations:[NSArray arrayWithObjects:positionAnimation, scaleAnimation, nil]];
+//    [currentAlbumImageView.layer addAnimation:animationGroup forKey:@"group"];
 }
+
 
 - (void)dismissAudioPlayingView
 {

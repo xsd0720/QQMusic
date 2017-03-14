@@ -14,7 +14,7 @@
  *
  *  @param responsObject 返回请求的数据结果
  */
-typedef void(^QMHttpToolSuccessBlock)(NSDictionary *responsObject);
+typedef void(^QMHttpToolSuccessBlock)(id responsObject);
 
 /**
  *  请求失败回调Block

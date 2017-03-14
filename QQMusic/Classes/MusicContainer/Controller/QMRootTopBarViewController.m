@@ -97,6 +97,7 @@
     
 }
 
+
 - (void)setUpNav
 {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -193,8 +194,8 @@
 
 - (void)rightButtonAction
 {
-    if (self.rootTopBarDelegate && [self.rootTopBarDelegate respondsToSelector:@selector(containersNavRightButtonAction)]) {
-        [self.rootTopBarDelegate containersNavRightButtonAction];
+    if (self.rootTopBarDelegate && [self.rootTopBarDelegate respondsToSelector:@selector(musichallAction)]) {
+        [self.rootTopBarDelegate musichallAction];
     }
 }
 

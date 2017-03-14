@@ -11,11 +11,15 @@
 #import "BETouchView.h"
 #import "QMLandscapePlayingView.h"
 #import "QMMiniPlayerController.h"
+#import "BETouchView.h"
+#import "AutoScrollLabel.h"
 @interface QMAudioPlayerViewController ()
 
 @property (nonatomic, strong) QMPlayingView *playingView;
 
-@property (nonatomic, strong) UIView *shadeView;
+@property (nonatomic, strong) BETouchView *beTouchView;
+
+@property (nonatomic, strong) AutoScrollLabel *autoScrollLabel;
 
 @end
 
@@ -24,34 +28,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-//    self.view.backgroundColor = [UIColor orangeColor];
     
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+    self.playingView = [[QMPlayingView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.playingView];
+    
+
+    UIButton *dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    dismissButton.frame = CGRectMake(0, 0, 60, 44);
+    [dismissButton setImage:[UIImage imageNamed:@"player_btn_close_normal"] forState:UIControlStateNormal];
+    [dismissButton setImage:[UIImage imageNamed:@"player_btn_close_hightlight"] forState:UIControlStateHighlighted];
+    [dismissButton addTarget:self action:@selector(dismissButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIButton *moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    moreButton.frame = CGRectMake(0, 0, 60, 44);
+    [moreButton setImage:[UIImage imageNamed:@"player_btn_more_normal"] forState:UIControlStateNormal];
+    [moreButton setImage:[UIImage imageNamed:@"player_btn_more_highlight"] forState:UIControlStateHighlighted];
+    [moreButton addTarget:self action:@selector(moreButtonButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+
+    
+    self.autoScrollLabel = [[AutoScrollLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    self.autoScrollLabel.font = [UIFont systemFontOfSize:19];
+    self.autoScrollLabel.textColor = [UIColor whiteColor];
+    
+    
+    self.beTouchView = [[BETouchView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, STATUS_AND_NAV_BAR_HEIGHT)];
+    self.beTouchView.leftView = dismissButton;
+    self.beTouchView.rightView = moreButton;
+    self.beTouchView.centerView = self.autoScrollLabel;
+    [self.beTouchView preLayoutSubView];
+    [self.view addSubview:self.beTouchView];
+
+    
+    self.autoScrollLabel.text = @"剑魂";
 }
 
-
-
-- (void)showPlayingView
+- (void)dismissButtonPressed
 {
-//    QMMiniPlayerView *miniPlayerView = [[QMMiniPlayerController sharedMiniPlayerController] miniPlayerView];
-//    [miniPlayerView pauseAlbumRotation];
-//    UIImageView *albumImageView = [miniPlayerView playingSongAlbumImageView];
-    
+    [self.autoScrollLabel dismiss];
+    [self dismissViewControllerAnimated:self completion:nil];
 }
 
+- (void)moreButtonButtonPressed
+{
+    
+}
 
 - (void)showPlayingViewAnimation
 {
-//    self.playingView.albumMode;
-//    
-//    [self setIsPlayingViewAnimating];
-//    self.view;
-    
-    
-    self.shadeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-    [self.shadeView setBackgroundColor:[UIColor clearColor]];
-    
+//    _bgImageView.alpha = 0;
+//    [UIView animateWithDuration:0.3f animations:^{
+//        _bgImageView.alpha = 1;
+//    } completion:^(BOOL finished) {
+//        self.view.backgroundColor = [UIColor whiteColor];
+//    }];
+
+//    UIView *currentAlbumImageView = [self.view viewWithTag:CURRENTALBUMVIEWTAG];
+//    //透明度变化
+//    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+//    opacityAnimation.fromValue = [NSNumber numberWithFloat:0];
+//    opacityAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+//    opacityAnimation.duration = 0.3f;
+//    opacityAnimation.autoreverses = NO;   //是否重播，原动画的倒播
+//    [self.bgImageView.layer addAnimation:opacityAnimation forKey:@"bgImage_Opacity"];
+
 }
 
 - (void)setIsPlayingViewAnimating
