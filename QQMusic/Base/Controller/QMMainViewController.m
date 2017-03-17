@@ -16,6 +16,7 @@
 
 #import "QMDataSourceTool.h"
 
+
 @interface QMMainViewController ()<UIGestureRecognizerDelegate, QMContainersViewControllerDelegate>
 
 @property (nonatomic, strong) QMLeftMenuViewController *leftMenuViewController;
@@ -183,7 +184,8 @@
 
 - (void)musichallAction
 {
-    [QMDataSourceTool start];
+
+
 }
 
 

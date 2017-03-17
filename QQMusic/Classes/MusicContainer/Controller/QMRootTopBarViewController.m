@@ -10,7 +10,7 @@
 
 #import "QMMineViewController.h"
 #import "QMMusicLibraryViewController.h"
-
+#import "QMCaptureTool.h"
 #define SEGMENTFONT     18
 
 @interface ContainerScollView : UIScrollView
@@ -84,6 +84,8 @@
 
 @property (nonatomic) QMRootTopBarSegment *containerSegment;
 
+@property (nonatomic) QMCaptureTool *captureTool;
+
 @end
 
 @implementation QMRootTopBarViewController
@@ -95,8 +97,19 @@
     [self setUpNav];
     [self setUpSubView];
     
+        self.captureTool = [[QMCaptureTool alloc] init];
+    
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+        
+        [self.captureTool startListen];
+
+   
+}
 
 - (void)setUpNav
 {

@@ -16,4 +16,12 @@
 #import "UIView+Toast.h"
 #import "UIView+Extension.h"
 
+#import "NSObject+Category.h"
+#import "NSString+Category.h"
+#import "NSString+Validate.h"
+#import "LocalDataSource.h"
+#import "UIColor+Category.h"
+
+#import "QMMusicCenterRequest.h"
+
 #endif /* QMPublicHeader_h */

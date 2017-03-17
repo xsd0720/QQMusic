@@ -52,23 +52,39 @@
 		0C2B2ACB1E779C61006D0378 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B2AC91E779A3F006D0378 /* libxml2.tbd */; };
 		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
 		0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */; };
-		0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E61E70ED76000D9A33 /* NDAES.m */; };
-		0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA27E91E7107D8000D9A33 /* Helper.m */; };
+		0CB0CD501E7B958F001F7D9B /* JKBigDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD481E7B958F001F7D9B /* JKBigDecimal.m */; };
+		0CB0CD511E7B958F001F7D9B /* JKBigInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD4A1E7B958F001F7D9B /* JKBigInteger.m */; };
+		0CB0CD521E7B958F001F7D9B /* tommath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD4C1E7B958F001F7D9B /* tommath.m */; };
+		0CB0CD551E7B9739001F7D9B /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD541E7B9739001F7D9B /* NSObject+Category.m */; };
+		0CB0CD581E7BB8D7001F7D9B /* LRCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD571E7BB8D7001F7D9B /* LRCParser.m */; };
+		0CB0CD5B1E7BBCBE001F7D9B /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD5A1E7BBCBE001F7D9B /* NSString+Validate.m */; };
+		0CB0CD611E7BC881001F7D9B /* QMImageRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD601E7BC881001F7D9B /* QMImageRoundButton.m */; };
+		0CB0CD641E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD631E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m */; };
+		0CB0CD671E7BCF65001F7D9B /* MyMusicGridNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD661E7BCF65001F7D9B /* MyMusicGridNumCell.m */; };
+		0CB0CD6A1E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD691E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.m */; };
+		0CB0CD6D1E7BCFA1001F7D9B /* MyMusicTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD6C1E7BCFA1001F7D9B /* MyMusicTitleCell.m */; };
+		0CB0CD701E7BD190001F7D9B /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD6F1E7BD190001F7D9B /* UIColor+Category.m */; };
+		0CB0CD741E7BD6D6001F7D9B /* LocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD731E7BD6D6001F7D9B /* LocalDataSource.m */; };
+		0CBDC1D91E7A309F00CC5387 /* QMMusicCenterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDC1D81E7A309F00CC5387 /* QMMusicCenterRequest.m */; };
+		0CBDC1DC1E7A33C000CC5387 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDC1DA1E7A33C000CC5387 /* SecurityUtil.m */; };
+		0CBDC1E51E7A78AA00CC5387 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDC1E41E7A78AA00CC5387 /* NSString+Category.m */; };
 		0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA96D31E778E3100DF8EEC /* BENoTouchView.m */; };
 		0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */; };
 		0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78D421E6E4BD600628F55 /* AFSoundManager.m */; };
+		0CEB3D891E78E22500B726FA /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D881E78E22500B726FA /* GCDAsyncUdpSocket.m */; };
+		0CEB3D981E78E25500B726FA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D8C1E78E25500B726FA /* GTMBase64.m */; };
+		0CEB3D9B1E78E25600B726FA /* NSData+NSData_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D931E78E25500B726FA /* NSData+NSData_AES.m */; };
+		0CEB3D9C1E78E25600B726FA /* NuRSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D951E78E25500B726FA /* NuRSAKey.m */; };
+		0CEB3D9D1E78E25600B726FA /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D971E78E25500B726FA /* RSA.m */; };
+		0CEB3DA01E78E33F00B726FA /* QMCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3D9F1E78E33F00B726FA /* QMCaptureTool.m */; };
+		0CEB3DA31E790CA300B726FA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB3DA21E790CA300B726FA /* GCDAsyncSocket.m */; };
 		0CF56EB01E76358400E114C8 /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */; };
 		0CF56EB31E76492D00E114C8 /* QMMiniPlayerScrollItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EB21E76492D00E114C8 /* QMMiniPlayerScrollItem.m */; };
 		0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EB81E76996600E114C8 /* AutoScrollTextView.m */; };
 		0CF56EBC1E76A97100E114C8 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF56EBB1E76A97100E114C8 /* AutoScrollLabel.m */; };
 		0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FA51E6FA51300B1280D /* QMMineViewController.m */; };
 		0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FAB1E6FA51300B1280D /* QMMusicLibraryViewController.m */; };
-		0CFE6FB21E6FA54200B1280D /* NuRSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FB11E6FA54200B1280D /* NuRSAKey.m */; };
-		0CFE6FB51E6FB04100B1280D /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FB41E6FB04000B1280D /* RSA.m */; };
 		0CFE6FB81E6FCB7800B1280D /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFE6FB71E6FCB7800B1280D /* ReplayKit.framework */; };
-		0CFE6FBB1E6FE17500B1280D /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FBA1E6FE17500B1280D /* SecurityUtil.m */; };
-		0CFE6FC11E6FE18100B1280D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FBD1E6FE18100B1280D /* GTMBase64.m */; };
-		0CFE6FC21E6FE18100B1280D /* NSData+NSData_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FC01E6FE18100B1280D /* NSData+NSData_AES.m */; };
 		0CFE6FC91E6FFA3E00B1280D /* QMMiniPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FC81E6FFA3E00B1280D /* QMMiniPlayerView.m */; };
 		0CFE6FCC1E6FFA9F00B1280D /* QMLyricView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FCB1E6FFA9F00B1280D /* QMLyricView.m */; };
 		0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE6FCE1E6FFAD200B1280D /* QMPlayingView.m */; };
@@ -170,16 +186,61 @@
 		0C8871E11E69440600A2D295 /* QMContainersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMContainersViewController.m; sourceTree = "<group>"; };
 		0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeftMenuViewController.h; sourceTree = "<group>"; };
 		0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLeftMenuViewController.m; sourceTree = "<group>"; };
-		0CCA27E51E70ED76000D9A33 /* NDAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAES.h; sourceTree = "<group>"; };
-		0CCA27E61E70ED76000D9A33 /* NDAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAES.m; sourceTree = "<group>"; };
-		0CCA27E81E7107D8000D9A33 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		0CCA27E91E7107D8000D9A33 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		0CB0CD471E7B958F001F7D9B /* JKBigDecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigDecimal.h; sourceTree = "<group>"; };
+		0CB0CD481E7B958F001F7D9B /* JKBigDecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigDecimal.m; sourceTree = "<group>"; };
+		0CB0CD491E7B958F001F7D9B /* JKBigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigInteger.h; sourceTree = "<group>"; };
+		0CB0CD4A1E7B958F001F7D9B /* JKBigInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigInteger.m; sourceTree = "<group>"; };
+		0CB0CD4C1E7B958F001F7D9B /* tommath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tommath.m; sourceTree = "<group>"; };
+		0CB0CD4D1E7B958F001F7D9B /* tommath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath.h; sourceTree = "<group>"; };
+		0CB0CD4E1E7B958F001F7D9B /* tommath_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_class.h; sourceTree = "<group>"; };
+		0CB0CD4F1E7B958F001F7D9B /* tommath_superclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_superclass.h; sourceTree = "<group>"; };
+		0CB0CD531E7B9739001F7D9B /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		0CB0CD541E7B9739001F7D9B /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		0CB0CD561E7BB8D7001F7D9B /* LRCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCParser.h; sourceTree = "<group>"; };
+		0CB0CD571E7BB8D7001F7D9B /* LRCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCParser.m; sourceTree = "<group>"; };
+		0CB0CD591E7BBCBE001F7D9B /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
+		0CB0CD5A1E7BBCBE001F7D9B /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		0CB0CD5F1E7BC881001F7D9B /* QMImageRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMImageRoundButton.h; sourceTree = "<group>"; };
+		0CB0CD601E7BC881001F7D9B /* QMImageRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMImageRoundButton.m; sourceTree = "<group>"; };
+		0CB0CD621E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicUserInfoCollectionCell.h; sourceTree = "<group>"; };
+		0CB0CD631E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicUserInfoCollectionCell.m; sourceTree = "<group>"; };
+		0CB0CD651E7BCF65001F7D9B /* MyMusicGridNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicGridNumCell.h; sourceTree = "<group>"; };
+		0CB0CD661E7BCF65001F7D9B /* MyMusicGridNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicGridNumCell.m; sourceTree = "<group>"; };
+		0CB0CD681E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicGuessiLikeCollectionCell.h; sourceTree = "<group>"; };
+		0CB0CD691E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicGuessiLikeCollectionCell.m; sourceTree = "<group>"; };
+		0CB0CD6B1E7BCFA1001F7D9B /* MyMusicTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicTitleCell.h; sourceTree = "<group>"; };
+		0CB0CD6C1E7BCFA1001F7D9B /* MyMusicTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicTitleCell.m; sourceTree = "<group>"; };
+		0CB0CD6E1E7BD190001F7D9B /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		0CB0CD6F1E7BD190001F7D9B /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		0CB0CD721E7BD6D6001F7D9B /* LocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataSource.h; sourceTree = "<group>"; };
+		0CB0CD731E7BD6D6001F7D9B /* LocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataSource.m; sourceTree = "<group>"; };
+		0CBDC1D71E7A309F00CC5387 /* QMMusicCenterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMusicCenterRequest.h; sourceTree = "<group>"; };
+		0CBDC1D81E7A309F00CC5387 /* QMMusicCenterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMusicCenterRequest.m; sourceTree = "<group>"; };
+		0CBDC1DA1E7A33C000CC5387 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		0CBDC1DB1E7A33C000CC5387 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		0CBDC1E31E7A78AA00CC5387 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		0CBDC1E41E7A78AA00CC5387 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		0CDA96D21E778E3100DF8EEC /* BENoTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BENoTouchView.h; sourceTree = "<group>"; };
 		0CDA96D31E778E3100DF8EEC /* BENoTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENoTouchView.m; sourceTree = "<group>"; };
 		0CE78D3F1E6E4BD600628F55 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
 		0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
 		0CE78D411E6E4BD600628F55 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
 		0CE78D421E6E4BD600628F55 /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
+		0CEB3D871E78E22500B726FA /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		0CEB3D881E78E22500B726FA /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		0CEB3D8B1E78E25500B726FA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0CEB3D8C1E78E25500B726FA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0CEB3D8D1E78E25500B726FA /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0CEB3D921E78E25500B726FA /* NSData+NSData_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSData_AES.h"; sourceTree = "<group>"; };
+		0CEB3D931E78E25500B726FA /* NSData+NSData_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSData_AES.m"; sourceTree = "<group>"; };
+		0CEB3D941E78E25500B726FA /* NuRSAKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuRSAKey.h; sourceTree = "<group>"; };
+		0CEB3D951E78E25500B726FA /* NuRSAKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuRSAKey.m; sourceTree = "<group>"; };
+		0CEB3D961E78E25500B726FA /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		0CEB3D971E78E25500B726FA /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		0CEB3D9E1E78E33F00B726FA /* QMCaptureTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMCaptureTool.h; sourceTree = "<group>"; };
+		0CEB3D9F1E78E33F00B726FA /* QMCaptureTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMCaptureTool.m; sourceTree = "<group>"; };
+		0CEB3DA11E790CA300B726FA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		0CEB3DA21E790CA300B726FA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		0CF56EAE1E76358400E114C8 /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
 		0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouch.m"; sourceTree = "<group>"; };
 		0CF56EB11E76492D00E114C8 /* QMMiniPlayerScrollItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMiniPlayerScrollItem.h; sourceTree = "<group>"; };
@@ -192,18 +253,7 @@
 		0CFE6FA51E6FA51300B1280D /* QMMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMineViewController.m; sourceTree = "<group>"; };
 		0CFE6FAA1E6FA51300B1280D /* QMMusicLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMusicLibraryViewController.h; sourceTree = "<group>"; };
 		0CFE6FAB1E6FA51300B1280D /* QMMusicLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMusicLibraryViewController.m; sourceTree = "<group>"; };
-		0CFE6FB01E6FA54200B1280D /* NuRSAKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuRSAKey.h; sourceTree = "<group>"; };
-		0CFE6FB11E6FA54200B1280D /* NuRSAKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuRSAKey.m; sourceTree = "<group>"; };
-		0CFE6FB31E6FB04000B1280D /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
-		0CFE6FB41E6FB04000B1280D /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		0CFE6FB71E6FCB7800B1280D /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
-		0CFE6FB91E6FE17500B1280D /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
-		0CFE6FBA1E6FE17500B1280D /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
-		0CFE6FBC1E6FE18100B1280D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		0CFE6FBD1E6FE18100B1280D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		0CFE6FBE1E6FE18100B1280D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		0CFE6FBF1E6FE18100B1280D /* NSData+NSData_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSData_AES.h"; sourceTree = "<group>"; };
-		0CFE6FC01E6FE18100B1280D /* NSData+NSData_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSData_AES.m"; sourceTree = "<group>"; };
 		0CFE6FC71E6FFA3E00B1280D /* QMMiniPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMiniPlayerView.h; sourceTree = "<group>"; };
 		0CFE6FC81E6FFA3E00B1280D /* QMMiniPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMiniPlayerView.m; sourceTree = "<group>"; };
 		0CFE6FCA1E6FFA9F00B1280D /* QMLyricView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLyricView.h; sourceTree = "<group>"; };
@@ -249,6 +299,7 @@
 		0C057B891E67EB1E00B7A9CC /* QQMusic */ = {
 			isa = PBXGroup;
 			children = (
+				0CBDC1D61E7A308600CC5387 /* WebServer */,
 				0C8871E61E69460300A2D295 /* StaticImage */,
 				0C057BA91E67EC5900B7A9CC /* Base */,
 				0C057BAA1E67EC5900B7A9CC /* Classes */,
@@ -286,6 +337,7 @@
 		0C057BA91E67EC5900B7A9CC /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0CB0CD711E7BD62F001F7D9B /* Model */,
 				0C0E25281E7258A500758ABA /* View */,
 				0C057C201E67FBA600B7A9CC /* Controller */,
 			);
@@ -319,6 +371,14 @@
 				0C057C031E67F5CF00B7A9CC /* UIViewCategory */,
 				0CF56EAE1E76358400E114C8 /* UIScrollView+UITouch.h */,
 				0CF56EAF1E76358400E114C8 /* UIScrollView+UITouch.m */,
+				0CBDC1E31E7A78AA00CC5387 /* NSString+Category.h */,
+				0CBDC1E41E7A78AA00CC5387 /* NSString+Category.m */,
+				0CB0CD531E7B9739001F7D9B /* NSObject+Category.h */,
+				0CB0CD541E7B9739001F7D9B /* NSObject+Category.m */,
+				0CB0CD591E7BBCBE001F7D9B /* NSString+Validate.h */,
+				0CB0CD5A1E7BBCBE001F7D9B /* NSString+Validate.m */,
+				0CB0CD6E1E7BD190001F7D9B /* UIColor+Category.h */,
+				0CB0CD6F1E7BD190001F7D9B /* UIColor+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -333,29 +393,21 @@
 		0C057BAE1E67EC5900B7A9CC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				0CFE6FBC1E6FE18100B1280D /* GTMBase64.h */,
-				0CFE6FBD1E6FE18100B1280D /* GTMBase64.m */,
-				0CFE6FBE1E6FE18100B1280D /* GTMDefines.h */,
-				0CFE6FBF1E6FE18100B1280D /* NSData+NSData_AES.h */,
-				0CFE6FC01E6FE18100B1280D /* NSData+NSData_AES.m */,
-				0CFE6FB91E6FE17500B1280D /* SecurityUtil.h */,
-				0CFE6FBA1E6FE17500B1280D /* SecurityUtil.m */,
+				0CB0CD561E7BB8D7001F7D9B /* LRCParser.h */,
+				0CB0CD571E7BB8D7001F7D9B /* LRCParser.m */,
+				0CB0CD461E7B958F001F7D9B /* JKBigInteger */,
+				0CEB3D8A1E78E25500B726FA /* Security */,
+				0CEB3D861E78E22500B726FA /* Socket */,
 				0CE78D3F1E6E4BD600628F55 /* AFAudioRouter.h */,
 				0CE78D401E6E4BD600628F55 /* AFAudioRouter.m */,
 				0CE78D411E6E4BD600628F55 /* AFSoundManager.h */,
 				0CE78D421E6E4BD600628F55 /* AFSoundManager.m */,
 				0C057BFD1E67F42F00B7A9CC /* QMHttpTool.h */,
 				0C057BFE1E67F42F00B7A9CC /* QMHttpTool.m */,
-				0CFE6FB01E6FA54200B1280D /* NuRSAKey.h */,
-				0CFE6FB11E6FA54200B1280D /* NuRSAKey.m */,
-				0CFE6FB31E6FB04000B1280D /* RSA.h */,
-				0CFE6FB41E6FB04000B1280D /* RSA.m */,
-				0CCA27E51E70ED76000D9A33 /* NDAES.h */,
-				0CCA27E61E70ED76000D9A33 /* NDAES.m */,
-				0CCA27E81E7107D8000D9A33 /* Helper.h */,
-				0CCA27E91E7107D8000D9A33 /* Helper.m */,
 				0C2B2AC31E779194006D0378 /* QMDataSourceTool.h */,
 				0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */,
+				0CEB3D9E1E78E33F00B726FA /* QMCaptureTool.h */,
+				0CEB3D9F1E78E33F00B726FA /* QMCaptureTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -560,6 +612,76 @@
 			path = StaticImage;
 			sourceTree = "<group>";
 		};
+		0CB0CD461E7B958F001F7D9B /* JKBigInteger */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0CD471E7B958F001F7D9B /* JKBigDecimal.h */,
+				0CB0CD481E7B958F001F7D9B /* JKBigDecimal.m */,
+				0CB0CD491E7B958F001F7D9B /* JKBigInteger.h */,
+				0CB0CD4A1E7B958F001F7D9B /* JKBigInteger.m */,
+				0CB0CD4B1E7B958F001F7D9B /* LibTomMath */,
+			);
+			path = JKBigInteger;
+			sourceTree = "<group>";
+		};
+		0CB0CD4B1E7B958F001F7D9B /* LibTomMath */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0CD4C1E7B958F001F7D9B /* tommath.m */,
+				0CB0CD4D1E7B958F001F7D9B /* tommath.h */,
+				0CB0CD4E1E7B958F001F7D9B /* tommath_class.h */,
+				0CB0CD4F1E7B958F001F7D9B /* tommath_superclass.h */,
+			);
+			path = LibTomMath;
+			sourceTree = "<group>";
+		};
+		0CB0CD711E7BD62F001F7D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0CD721E7BD6D6001F7D9B /* LocalDataSource.h */,
+				0CB0CD731E7BD6D6001F7D9B /* LocalDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CBDC1D61E7A308600CC5387 /* WebServer */ = {
+			isa = PBXGroup;
+			children = (
+				0CBDC1D71E7A309F00CC5387 /* QMMusicCenterRequest.h */,
+				0CBDC1D81E7A309F00CC5387 /* QMMusicCenterRequest.m */,
+			);
+			path = WebServer;
+			sourceTree = "<group>";
+		};
+		0CEB3D861E78E22500B726FA /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				0CEB3DA11E790CA300B726FA /* GCDAsyncSocket.h */,
+				0CEB3DA21E790CA300B726FA /* GCDAsyncSocket.m */,
+				0CEB3D871E78E22500B726FA /* GCDAsyncUdpSocket.h */,
+				0CEB3D881E78E22500B726FA /* GCDAsyncUdpSocket.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		0CEB3D8A1E78E25500B726FA /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				0CBDC1DB1E7A33C000CC5387 /* SecurityUtil.h */,
+				0CBDC1DA1E7A33C000CC5387 /* SecurityUtil.m */,
+				0CEB3D8B1E78E25500B726FA /* GTMBase64.h */,
+				0CEB3D8C1E78E25500B726FA /* GTMBase64.m */,
+				0CEB3D8D1E78E25500B726FA /* GTMDefines.h */,
+				0CEB3D921E78E25500B726FA /* NSData+NSData_AES.h */,
+				0CEB3D931E78E25500B726FA /* NSData+NSData_AES.m */,
+				0CEB3D941E78E25500B726FA /* NuRSAKey.h */,
+				0CEB3D951E78E25500B726FA /* NuRSAKey.m */,
+				0CEB3D961E78E25500B726FA /* RSA.h */,
+				0CEB3D971E78E25500B726FA /* RSA.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 		0CFE6FA21E6FA51300B1280D /* MusicMine */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +711,16 @@
 		0CFE6FA71E6FA51300B1280D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0CB0CD5F1E7BC881001F7D9B /* QMImageRoundButton.h */,
+				0CB0CD601E7BC881001F7D9B /* QMImageRoundButton.m */,
+				0CB0CD621E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.h */,
+				0CB0CD631E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m */,
+				0CB0CD651E7BCF65001F7D9B /* MyMusicGridNumCell.h */,
+				0CB0CD661E7BCF65001F7D9B /* MyMusicGridNumCell.m */,
+				0CB0CD681E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.h */,
+				0CB0CD691E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.m */,
+				0CB0CD6B1E7BCFA1001F7D9B /* MyMusicTitleCell.h */,
+				0CB0CD6C1E7BCFA1001F7D9B /* MyMusicTitleCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -763,28 +895,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB0CD6A1E7BCF90001F7D9B /* MyMusicGuessiLikeCollectionCell.m in Sources */,
 				0C057BFF1E67F42F00B7A9CC /* QMHttpTool.m in Sources */,
 				0CFE6FC91E6FFA3E00B1280D /* QMMiniPlayerView.m in Sources */,
 				0C057BEB1E67ECCF00B7A9CC /* UIImage+GIF.m in Sources */,
 				0C057C111E67F5CF00B7A9CC /* UIView+SubView.m in Sources */,
-				0CFE6FC21E6FE18100B1280D /* NSData+NSData_AES.m in Sources */,
+				0CB0CD701E7BD190001F7D9B /* UIColor+Category.m in Sources */,
 				0C057C0E1E67F5CF00B7A9CC /* UIView+Extension.m in Sources */,
+				0CEB3D9D1E78E25600B726FA /* RSA.m in Sources */,
 				0C057BF11E67ECCF00B7A9CC /* AFHTTPSessionManager.m in Sources */,
 				0C057C291E67FBA600B7A9CC /* QMNavigationController.m in Sources */,
+				0CB0CD741E7BD6D6001F7D9B /* LocalDataSource.m in Sources */,
+				0CB0CD6D1E7BCFA1001F7D9B /* MyMusicTitleCell.m in Sources */,
 				0CFE6FCC1E6FFA9F00B1280D /* QMLyricView.m in Sources */,
+				0CB0CD581E7BB8D7001F7D9B /* LRCParser.m in Sources */,
 				0C057C101E67F5CF00B7A9CC /* UIView+Toast.m in Sources */,
 				0C057BF21E67ECCF00B7A9CC /* AFNetworkReachabilityManager.m in Sources */,
 				0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */,
+				0CEB3D891E78E22500B726FA /* GCDAsyncUdpSocket.m in Sources */,
+				0CB0CD551E7B9739001F7D9B /* NSObject+Category.m in Sources */,
 				0C057BE61E67ECCF00B7A9CC /* SDWebImageDownloader.m in Sources */,
+				0CB0CD611E7BC881001F7D9B /* QMImageRoundButton.m in Sources */,
+				0CB0CD501E7B958F001F7D9B /* JKBigDecimal.m in Sources */,
 				0C057BEE1E67ECCF00B7A9CC /* UIImageView+HighlightedWebCache.m in Sources */,
 				0C0E25241E72554600758ABA /* QMRootTopBarViewController.m in Sources */,
 				0C057C271E67FBA600B7A9CC /* QMBaseViewController.m in Sources */,
+				0CEB3D9C1E78E25600B726FA /* NuRSAKey.m in Sources */,
+				0CB0CD521E7B958F001F7D9B /* tommath.m in Sources */,
 				0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
 				0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */,
 				0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */,
 				0C057BF41E67ECCF00B7A9CC /* AFURLRequestSerialization.m in Sources */,
+				0CBDC1D91E7A309F00CC5387 /* QMMusicCenterRequest.m in Sources */,
 				0C057BF31E67ECCF00B7A9CC /* AFSecurityPolicy.m in Sources */,
 				0C057C281E67FBA600B7A9CC /* QMMainViewController.m in Sources */,
 				0C057BF61E67ECCF00B7A9CC /* AFURLSessionManager.m in Sources */,
@@ -793,26 +937,33 @@
 				0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */,
 				0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */,
 				0C057BE41E67ECCF00B7A9CC /* SDWebImageCompat.m in Sources */,
+				0CEB3DA01E78E33F00B726FA /* QMCaptureTool.m in Sources */,
 				0CF56EB01E76358400E114C8 /* UIScrollView+UITouch.m in Sources */,
-				0CCA27E71E70ED76000D9A33 /* NDAES.m in Sources */,
 				0CFE6FD21E6FFC8F00B1280D /* QMLandscapePlayingView.m in Sources */,
 				0CF56EBC1E76A97100E114C8 /* AutoScrollLabel.m in Sources */,
+				0CEB3D981E78E25500B726FA /* GTMBase64.m in Sources */,
+				0CB0CD671E7BCF65001F7D9B /* MyMusicGridNumCell.m in Sources */,
+				0CB0CD641E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m in Sources */,
 				0C057BA71E67EBF000B7A9CC /* main.m in Sources */,
 				0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */,
 				0C057BED1E67ECCF00B7A9CC /* UIImage+WebP.m in Sources */,
+				0CEB3DA31E790CA300B726FA /* GCDAsyncSocket.m in Sources */,
+				0CEB3D9B1E78E25600B726FA /* NSData+NSData_AES.m in Sources */,
 				0C057BE21E67ECCF00B7A9CC /* NSData+ImageContentType.m in Sources */,
 				0C057BE71E67ECCF00B7A9CC /* SDWebImageDownloaderOperation.m in Sources */,
 				0C057C2F1E67FBD700B7A9CC /* QMSettingViewController.m in Sources */,
 				0C057BE81E67ECCF00B7A9CC /* SDWebImageManager.m in Sources */,
+				0CB0CD5B1E7BBCBE001F7D9B /* NSString+Validate.m in Sources */,
 				0C0E25371E72947200758ABA /* ComHelper.m in Sources */,
 				0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */,
 				0C057BEC1E67ECCF00B7A9CC /* UIImage+MultiFormat.m in Sources */,
-				0CFE6FBB1E6FE17500B1280D /* SecurityUtil.m in Sources */,
 				0C057BE91E67ECCF00B7A9CC /* SDWebImagePrefetcher.m in Sources */,
 				0C0E25271E72586F00758ABA /* QMAudioPlayerViewController.m in Sources */,
 				0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */,
-				0CFE6FB51E6FB04100B1280D /* RSA.m in Sources */,
 				0C057BE11E67ECCF00B7A9CC /* MKAnnotationView+WebCache.m in Sources */,
+				0CBDC1E51E7A78AA00CC5387 /* NSString+Category.m in Sources */,
+				0CBDC1DC1E7A33C000CC5387 /* SecurityUtil.m in Sources */,
+				0CB0CD511E7B958F001F7D9B /* JKBigInteger.m in Sources */,
 				0CF56EB31E76492D00E114C8 /* QMMiniPlayerScrollItem.m in Sources */,
 				0CFE6FAE1E6FA51300B1280D /* QMMineViewController.m in Sources */,
 				0C057BF01E67ECCF00B7A9CC /* UIView+WebCacheOperation.m in Sources */,
@@ -821,11 +972,8 @@
 				0CFE6FD51E70076600B1280D /* QMMiniPlayerController.m in Sources */,
 				0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */,
 				0C057BF51E67ECCF00B7A9CC /* AFURLResponseSerialization.m in Sources */,
-				0CFE6FB21E6FA54200B1280D /* NuRSAKey.m in Sources */,
-				0CFE6FC11E6FE18100B1280D /* GTMBase64.m in Sources */,
 				0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */,
 				0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */,
-				0CCA27EA1E7107D8000D9A33 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "QMAppDelegate.h"
-
+#import "QMMusicCenterRequest.h"
 #import "QMMainViewController.h"
 
 @interface QMAppDelegate ()
@@ -32,6 +32,7 @@
     self.window.rootViewController = qmMainViewController;
     
     [self.window makeKeyAndVisible];
+    
 }
 
 

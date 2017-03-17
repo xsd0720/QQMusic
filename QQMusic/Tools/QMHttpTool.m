@@ -43,14 +43,12 @@
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
     
     //申明返回的结果是json类型
-//    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    //申明请求的数据是json类型
-    //    manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/plain", nil];
     
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
-    
-    manager.securityPolicy = [AFSecurityPolicy defaultPolicy];
+    [manager.requestSerializer setValue:@"http://music.163.com/search/" forHTTPHeaderField:@"Referer"];
+    [manager.requestSerializer setValue:@"music.163.com" forHTTPHeaderField:@"Host"];
+    [manager.requestSerializer setValue:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36" forHTTPHeaderField:@"User-Agent"];
     
     [manager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -86,12 +84,10 @@
     
     //申明返回的结果是json类型
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    //申明请求的数据是json类型
-//        manager.requestSerializer=[AFJSONRequestSerializer serializer];
-//    manager.requestSerializer.accep
-//    
-//    manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript", @"application/octet-stream", @"text/plain",nil];
-//    manager.securityPolicy = [AFSecurityPolicy defaultPolicy];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/plain", nil];
+    [manager.requestSerializer setValue:@"http://music.163.com/search/" forHTTPHeaderField:@"Referer"];
+    [manager.requestSerializer setValue:@"music.163.com" forHTTPHeaderField:@"Host"];
+    [manager.requestSerializer setValue:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36" forHTTPHeaderField:@"User-Agent"];
     
     [manager POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
