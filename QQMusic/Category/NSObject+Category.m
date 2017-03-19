@@ -54,4 +54,19 @@
     return totoalBig;
 }
 
++ (uint64_t)powMod:(uint64_t)a b:(uint64_t)b c:(uint64_t)c
+{
+    uint64_t ans = 1;
+    a = a%c;
+    while (b>0) {
+        if (b%2 == 1) {
+            ans = (ans * a)%c;
+        }
+        b = b/2;
+        a = (a*a)%c;
+        
+    }
+    return ans;
+}
+
 @end

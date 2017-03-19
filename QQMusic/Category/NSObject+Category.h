@@ -14,4 +14,5 @@
 
 - (JKBigInteger *)vint:(NSString *)hexStr base:(int)base;
 
++ (uint64_t)powMod:(uint64_t)a b:(uint64_t)b c:(uint64_t)c;
 @end
