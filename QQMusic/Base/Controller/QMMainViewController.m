@@ -60,9 +60,9 @@
     [self addChildViewController:self.containersViewController];
     
     
-    self.showMenuPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(showMenuPanGestureAction:)];
-    self.showMenuPanGesture.delegate = self;
-    [self.view addGestureRecognizer:self.showMenuPanGesture];
+//    self.showMenuPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(showMenuPanGestureAction:)];
+//    self.showMenuPanGesture.delegate = self;
+//    [self.view addGestureRecognizer:self.showMenuPanGesture];
     
     
     self.lockContainerView = [[UIControl alloc] initWithFrame:self.view.bounds];

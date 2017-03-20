@@ -9,7 +9,7 @@
 #import "QMAppDelegate.h"
 #import "QMMusicCenterRequest.h"
 #import "QMMainViewController.h"
-
+#import "QMMusicCenterRequest.h"
 @interface QMAppDelegate ()
 
 @end

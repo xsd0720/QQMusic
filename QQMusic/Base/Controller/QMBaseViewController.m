@@ -9,8 +9,9 @@
 
 #import "QMBaseViewController.h"
 
-
 @interface QMBaseViewController ()
+
+
 
 @end
 
@@ -29,10 +30,20 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
 }
 
 
+
+- (void)setShowNav:(BOOL)showNav
+{
+    _showNav = showNav;
+    if (showNav && !self.navView.superview) {
+        self.navView = [[BETouchView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, STATUS_AND_NAV_BAR_HEIGHT)];
+        self.navView.backgroundColor = MAIN_TONE_COLOR;
+        [self.view addSubview:self.navView];
+    }
+}
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;

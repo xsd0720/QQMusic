@@ -23,18 +23,24 @@
 {
     _leftView = leftView;
     [self addSubview:_leftView];
+    
+    [self preLayoutSubView];
 }
 
 - (void)setCenterView:(UIView *)centerView
 {
     _centerView = centerView;
     [self addSubview:_centerView];
+    
+    [self preLayoutSubView];
 }
 
 - (void)setRightView:(UIView *)rightView
 {
     _rightView = rightView;
     [self addSubview:_rightView];
+    
+    [self preLayoutSubView];
 }
 
 - (void)preLayoutSubView

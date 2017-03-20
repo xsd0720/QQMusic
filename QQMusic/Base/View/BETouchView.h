@@ -16,6 +16,5 @@
 
 @property (nonatomic, strong) UIView *rightView;
 
-- (void)preLayoutSubView;
 
 @end

@@ -48,6 +48,13 @@
 		0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E252D1E7279B300758ABA /* QMMiniPlayerPlayButton.m */; };
 		0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25331E728C7900758ABA /* AudioPlayManager.m */; };
 		0C0E25371E72947200758ABA /* ComHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E25361E72947200758ABA /* ComHelper.m */; };
+		0C1AB0CE1E7FC36200AF88F9 /* LibMusicBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0CD1E7FC36200AF88F9 /* LibMusicBannerCell.m */; };
+		0C1AB0D11E7FC37C00AF88F9 /* LibMusicGridNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0D01E7FC37C00AF88F9 /* LibMusicGridNumCell.m */; };
+		0C1AB0D41E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0D31E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.m */; };
+		0C1AB0D71E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0D61E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m */; };
+		0C1AB0DA1E7FC43900AF88F9 /* LibMusicNewExpressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0D91E7FC43900AF88F9 /* LibMusicNewExpressCell.m */; };
+		0C1AB0DD1E7FD38600AF88F9 /* QMMusicSingerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0DC1E7FD38600AF88F9 /* QMMusicSingerViewController.m */; };
+		0C1AB0E01E7FDE9500AF88F9 /* SingerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AB0DF1E7FDE9500AF88F9 /* SingerCell.m */; };
 		0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */; };
 		0C2B2ACB1E779C61006D0378 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B2AC91E779A3F006D0378 /* libxml2.tbd */; };
 		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
@@ -179,6 +186,20 @@
 		0C0E25331E728C7900758ABA /* AudioPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayManager.m; sourceTree = "<group>"; };
 		0C0E25351E72947200758ABA /* ComHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComHelper.h; sourceTree = "<group>"; };
 		0C0E25361E72947200758ABA /* ComHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComHelper.m; sourceTree = "<group>"; };
+		0C1AB0CC1E7FC36200AF88F9 /* LibMusicBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMusicBannerCell.h; sourceTree = "<group>"; };
+		0C1AB0CD1E7FC36200AF88F9 /* LibMusicBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMusicBannerCell.m; sourceTree = "<group>"; };
+		0C1AB0CF1E7FC37C00AF88F9 /* LibMusicGridNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMusicGridNumCell.h; sourceTree = "<group>"; };
+		0C1AB0D01E7FC37C00AF88F9 /* LibMusicGridNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMusicGridNumCell.m; sourceTree = "<group>"; };
+		0C1AB0D21E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMusicHotRecommendCell.h; sourceTree = "<group>"; };
+		0C1AB0D31E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMusicHotRecommendCell.m; sourceTree = "<group>"; };
+		0C1AB0D51E7FC3D900AF88F9 /* LibMusicDayRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMusicDayRecommendCell.h; sourceTree = "<group>"; };
+		0C1AB0D61E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMusicDayRecommendCell.m; sourceTree = "<group>"; };
+		0C1AB0D81E7FC43900AF88F9 /* LibMusicNewExpressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMusicNewExpressCell.h; sourceTree = "<group>"; };
+		0C1AB0D91E7FC43900AF88F9 /* LibMusicNewExpressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMusicNewExpressCell.m; sourceTree = "<group>"; };
+		0C1AB0DB1E7FD38600AF88F9 /* QMMusicSingerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMusicSingerViewController.h; sourceTree = "<group>"; };
+		0C1AB0DC1E7FD38600AF88F9 /* QMMusicSingerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMusicSingerViewController.m; sourceTree = "<group>"; };
+		0C1AB0DE1E7FDE9500AF88F9 /* SingerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingerCell.h; sourceTree = "<group>"; };
+		0C1AB0DF1E7FDE9500AF88F9 /* SingerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingerCell.m; sourceTree = "<group>"; };
 		0C2B2AC31E779194006D0378 /* QMDataSourceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMDataSourceTool.h; sourceTree = "<group>"; };
 		0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMDataSourceTool.m; sourceTree = "<group>"; };
 		0C2B2AC91E779A3F006D0378 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
@@ -740,6 +761,8 @@
 			children = (
 				0CFE6FAA1E6FA51300B1280D /* QMMusicLibraryViewController.h */,
 				0CFE6FAB1E6FA51300B1280D /* QMMusicLibraryViewController.m */,
+				0C1AB0DB1E7FD38600AF88F9 /* QMMusicSingerViewController.h */,
+				0C1AB0DC1E7FD38600AF88F9 /* QMMusicSingerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -754,6 +777,18 @@
 		0CFE6FAD1E6FA51300B1280D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C1AB0CC1E7FC36200AF88F9 /* LibMusicBannerCell.h */,
+				0C1AB0CD1E7FC36200AF88F9 /* LibMusicBannerCell.m */,
+				0C1AB0CF1E7FC37C00AF88F9 /* LibMusicGridNumCell.h */,
+				0C1AB0D01E7FC37C00AF88F9 /* LibMusicGridNumCell.m */,
+				0C1AB0D21E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.h */,
+				0C1AB0D31E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.m */,
+				0C1AB0D51E7FC3D900AF88F9 /* LibMusicDayRecommendCell.h */,
+				0C1AB0D61E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m */,
+				0C1AB0D81E7FC43900AF88F9 /* LibMusicNewExpressCell.h */,
+				0C1AB0D91E7FC43900AF88F9 /* LibMusicNewExpressCell.m */,
+				0C1AB0DE1E7FDE9500AF88F9 /* SingerCell.h */,
+				0C1AB0DF1E7FDE9500AF88F9 /* SingerCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -900,6 +935,7 @@
 				0CFE6FC91E6FFA3E00B1280D /* QMMiniPlayerView.m in Sources */,
 				0C057BEB1E67ECCF00B7A9CC /* UIImage+GIF.m in Sources */,
 				0C057C111E67F5CF00B7A9CC /* UIView+SubView.m in Sources */,
+				0C1AB0D71E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m in Sources */,
 				0CB0CD701E7BD190001F7D9B /* UIColor+Category.m in Sources */,
 				0C057C0E1E67F5CF00B7A9CC /* UIView+Extension.m in Sources */,
 				0CEB3D9D1E78E25600B726FA /* RSA.m in Sources */,
@@ -923,7 +959,9 @@
 				0CEB3D9C1E78E25600B726FA /* NuRSAKey.m in Sources */,
 				0CB0CD521E7B958F001F7D9B /* tommath.m in Sources */,
 				0C0E25341E728C7900758ABA /* AudioPlayManager.m in Sources */,
+				0C1AB0E01E7FDE9500AF88F9 /* SingerCell.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
+				0C1AB0CE1E7FC36200AF88F9 /* LibMusicBannerCell.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
 				0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */,
 				0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */,
@@ -960,6 +998,8 @@
 				0C057BE91E67ECCF00B7A9CC /* SDWebImagePrefetcher.m in Sources */,
 				0C0E25271E72586F00758ABA /* QMAudioPlayerViewController.m in Sources */,
 				0CE78D441E6E4BD600628F55 /* AFSoundManager.m in Sources */,
+				0C1AB0DA1E7FC43900AF88F9 /* LibMusicNewExpressCell.m in Sources */,
+				0C1AB0D41E7FC3BB00AF88F9 /* LibMusicHotRecommendCell.m in Sources */,
 				0C057BE11E67ECCF00B7A9CC /* MKAnnotationView+WebCache.m in Sources */,
 				0CBDC1E51E7A78AA00CC5387 /* NSString+Category.m in Sources */,
 				0CBDC1DC1E7A33C000CC5387 /* SecurityUtil.m in Sources */,
@@ -974,6 +1014,8 @@
 				0C057BF51E67ECCF00B7A9CC /* AFURLResponseSerialization.m in Sources */,
 				0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */,
 				0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */,
+				0C1AB0D11E7FC37C00AF88F9 /* LibMusicGridNumCell.m in Sources */,
+				0C1AB0DD1E7FD38600AF88F9 /* QMMusicSingerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

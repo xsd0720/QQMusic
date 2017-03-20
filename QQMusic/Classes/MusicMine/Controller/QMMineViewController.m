@@ -60,9 +60,19 @@
 
 }
 
+
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    if (section<=1) {
+        return UIEdgeInsetsZero;
+    }
+    return UIEdgeInsetsMake(15, 0, 0, 0);//分别为上、左、下、右
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 3;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -81,7 +91,7 @@
             break;
         case 2:
         {
-         
+            return CGSizeMake(SCREEN_WIDTH, 50);
         }
             break;
         default:
@@ -108,7 +118,7 @@
             break;
         case 2:
         {
-            return 1;
+            return 2;
         }
             break;
         default:
@@ -137,7 +147,8 @@
             break;
         case 2:
         {
-          
+            MyMusicGuessiLikeCollectionCell *likeCell = [collectionView dequeueReusableCellWithReuseIdentifier:MINE_GUESS_COLLECTOIN_CELLIDENTIFIER forIndexPath:indexPath];
+            return likeCell;
         }
             break;
         default:

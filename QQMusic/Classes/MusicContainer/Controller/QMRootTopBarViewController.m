@@ -42,8 +42,10 @@
         [titles enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             UIButton *segmentItem = [UIButton buttonWithType:UIButtonTypeCustom];
             [segmentItem setTitle:obj forState:UIControlStateNormal];
+            segmentItem.tag = idx;
             segmentItem.titleLabel.font = [UIFont systemFontOfSize:SEGMENTFONT];
             segmentItem.frame = CGRectMake(frame.size.width/2*idx, 0, frame.size.width/2, frame.size.height);
+            [segmentItem addTarget:self action:@selector(segmentItemClick:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:segmentItem];
         }];
     }
@@ -67,6 +69,13 @@
         
     }
 }
+
+- (void)segmentItemClick:(UIButton *)sender
+{
+    self.selectedIndex = (int)sender.tag;
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
 @end
 
 @interface QMRootTopBarViewController ()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
@@ -106,7 +115,7 @@
     [super viewDidAppear:animated];
 
         
-        [self.captureTool startListen];
+    [self.captureTool startListen];
 
    
 }
@@ -139,9 +148,12 @@
     
     self.containerSegment = [[QMRootTopBarSegment alloc] initWithFrame:CGRectMake(0, SYS_STATUSBAR_HEIGHT, 120, NAVIGATIONBAR_HEIGHT) titles:@[@"我的", @"音乐馆"]];
     self.containerSegment.centerX = self.navView.width/2;
+    [self.containerSegment addTarget:self action:@selector(containerSegmentClick:) forControlEvents:UIControlEventValueChanged];
     [self.navView addSubview:self.containerSegment];
     
 }
+
+
 
 - (void)setUpSubView
 {
@@ -169,6 +181,16 @@
     
     [self scrollViewDidScroll:self.mainScrollView];
     [self scrollViewDidEndDecelerating:self.mainScrollView];
+}
+
+- (void)containerSegmentClick:(QMRootTopBarSegment *)segement
+{
+    if (segement.selectedIndex == 0) {
+        [self.mainScrollView setContentOffset:CGPointZero];
+    }else
+    {
+        [self.mainScrollView setContentOffset:CGPointMake(SCREEN_WIDTH, 0)];
+    }
 }
 
 

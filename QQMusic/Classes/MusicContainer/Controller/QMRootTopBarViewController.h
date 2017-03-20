@@ -6,7 +6,7 @@
 //  Copyright © 2017年 xwmedia01. All rights reserved.
 //
 
-#import "QMNavigationController.h"
+#import "QMBaseViewController.h"
 
 @protocol QMRootTopBarViewControllerDelegate <NSObject>
 
@@ -16,7 +16,7 @@
 
 @end
 
-@interface QMRootTopBarViewController : QMNavigationController
+@interface QMRootTopBarViewController : QMBaseViewController
 
 @property (nonatomic, assign) id<QMRootTopBarViewControllerDelegate> rootTopBarDelegate;
 

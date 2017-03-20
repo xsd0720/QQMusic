@@ -67,4 +67,45 @@
              };
 }
 
+- (NSDictionary *)libraryMusicGridResponse
+{
+    return @{
+             @"items" : @[
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"歌手",
+                         },
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"排行",
+                         },
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"电台",
+                         },
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"分类歌单",
+                         },
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"视频MV",
+                         },
+                     @{
+                         @"imageName" : @"",
+                         @"imageName_HL" : @"",
+                         @"title" : @"数字专辑",
+                         },
+                     
+                     ]
+             
+             };
+}
+
+
 @end

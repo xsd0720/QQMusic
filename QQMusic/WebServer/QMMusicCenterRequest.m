@@ -119,6 +119,7 @@ static NSString *PUBKEY =  @"010001";
     
     
 }
+
 - (NSString *)createSecretKey
 {
     NSArray *randomPool = @[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i", @"j", @"k", @"l", @"m", @"n", @"o", @"p", @"q", @"r", @"s", @"t", @"u", @"v", @"w", @"x", @"y", @"z", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
@@ -144,7 +145,20 @@ static NSString *PUBKEY =  @"010001";
     return data;
 }
 
-
+- (void)decryed
+{
+    NSString *mima = @"7e20e14d67b7ae3926b0ff56cdd8426624dae03baaceda786b8195ef1e192097d0fbf584aa8737a8732936a311a1d4b90ead758e59c6c755400c0c2c9a45549acfa6baeb23dbc175f52f7046a8267f5a271366018cc1da0343b0b19af96807b72126a8dd6938fbfc32855be3af22948fcc6421e86419fa2ec639d3729710bb19";
+    JKBigInteger *a = [self vint:mima base:16];
+    NSLog(@"%@", [a description]);
+    
+    JKBigInteger *pubKeyInt = [self vint:PUBKEY base:16];
+    JKBigInteger *modulusInt = [self vint:MODULUS base:16];
+    
+    JKBigInteger *rs =[a pow:pubKeyInt andMod:modulusInt];
+    NSString *rss = [self bighexStringFromString:rs];
+    NSLog(@"%@", [rss description]);
+    
+}
 
 - (NSString *)rsaEncrypt:(NSString *)secKey pubKey:(NSString *)pubKey modulus:(NSString *)modulus
 {

@@ -56,7 +56,7 @@
     self.beTouchView.leftView = dismissButton;
     self.beTouchView.rightView = moreButton;
     self.beTouchView.centerView = self.autoScrollLabel;
-    [self.beTouchView preLayoutSubView];
+
     [self.view addSubview:self.beTouchView];
 
     

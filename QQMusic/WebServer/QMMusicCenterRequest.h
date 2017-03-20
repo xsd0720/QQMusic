@@ -38,5 +38,5 @@
              failure:(QMHttpToolFailBlock)failure;
 
 
-
+- (void)decryed;
 @end

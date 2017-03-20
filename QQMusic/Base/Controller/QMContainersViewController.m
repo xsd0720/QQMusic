@@ -10,6 +10,7 @@
 #import "QMRootTopBarViewController.h"
 #import "QMMiniPlayerController.h"
 #import "QMAudioPlayerViewController.h"
+#import "QMNavigationController.h"
 @interface QMContainersViewController ()<QMRootTopBarViewControllerDelegate, QMMiniPlayerControllerDelegate, QMRootTopBarViewControllerDelegate>
 
 @property (nonatomic, strong) QMRootTopBarViewController *rootTopBarViewController;
@@ -33,11 +34,14 @@
 
 - (void)setUpSubView
 {
+    
     self.rootTopBarViewController = [[QMRootTopBarViewController alloc] init];
     self.rootTopBarViewController.view.frame = self.view.bounds;
     self.rootTopBarViewController.rootTopBarDelegate = self;
-    [self.view addSubview:self.rootTopBarViewController.view];
-    [self addChildViewController:self.rootTopBarViewController];
+    QMNavigationController *rootTopBarNav = [[QMNavigationController alloc] initWithRootViewController:self.rootTopBarViewController];
+    [rootTopBarNav setNavigationBarHidden:YES];
+    [self.view addSubview:rootTopBarNav.view];
+    [self addChildViewController:rootTopBarNav];
     
     
     self.miniPlayerController = [[QMMiniPlayerController alloc] init];
@@ -74,6 +78,7 @@
     self.audioPlayerViewController = [[QMAudioPlayerViewController alloc] init];
     
     [self presentViewController:self.audioPlayerViewController animated:YES completion:nil];
+//    [self.navigationController pushViewController:self.audioPlayerViewController animated:ye]
     
 //    [self.view addSubview:self.audioPlayerViewController.view];
 //    [self addChildViewController:self.audioPlayerViewController];
