@@ -7,9 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface AudioPlayManager : NSObject
 
+@property (nonatomic, strong) AVPlayer *audioPlayer;
+
 + (AudioPlayManager *)sharedAudioPlayManager;
+
+- (void)preparePlayerWithURL:(NSURL *)URL;
+
+- (void)play;
+
+- (void)pause;
+
+- (void)finish;
 
 @end

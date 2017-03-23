@@ -69,6 +69,32 @@ static NSString *PUBKEY =  @"010001";
     }];
 }
 
++ (void)getTopSongListWithURL:(NSString *)url
+                      success:(QMHttpToolSuccessBlock)success
+                      failure:(QMHttpToolFailBlock)failure
+{
+    NSString *requestURLStr = [NSString stringWithFormat:@"http://music.163.com%@", url];
+    [QMHttpTool HTMLGET:requestURLStr parameters:nil success:^(id responsObject) {
+        success(responsObject);
+    } failure:^(NSError *error) {
+        failure(error);
+    }];
+    
+}
+
++ (void)getSongDetailWithIds:(NSArray *)songids
+                     success:(QMHttpToolSuccessBlock)success
+                     failure:(QMHttpToolFailBlock)failure
+{
+    NSString *string = [songids componentsJoinedByString:@","];
+    NSString *requestURLStr = [NSString stringWithFormat:@"http://music.163.com/api/song/detail?ids=[%@]", string];
+    [QMHttpTool GET:requestURLStr parameters:nil success:^(id responsObject) {
+        success(responsObject);
+    } failure:^(NSError *error) {
+        failure(error);
+    }];
+}
+
 //params:2VrMwZttyQVN2NMsHPMzNAXU9Z/uOn1JJvegGlj43VZsnZ7EFZy7Zj0AYIYxD3xHe2VaeVw2XV8gB6aTYiOyEcYUmi09OYk4273iwTPGMY4YuK8T9Y5s/AEUvOyUoWSD+7N7YogPaPNOz0gdxIz0aQ==
 //encSecKey:d2dcc7c09fce3535a380d961f7551ab4309d861e82d737116117335d47e927a84538dbda433cfa3dd310b11e052da7b01798465e49f291c6aa59df6cdf8c88c908effce5b57d34456507713ff3d1ee1976a080e882f224cc0e0e071f1b6081026ed555994902cddcdc59c4b6d9eb805e38249ce7837fb6d62f130b0c61bf111e
 //test id  418603077  告白气球

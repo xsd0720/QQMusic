@@ -41,6 +41,19 @@ typedef void(^QMHttpToolFailBlock)(NSError *error);
  *  @param success    请求成功回调
  *  @param failure    请求失败回调
  */
++ (void)HTMLGET:(NSString *)URLString
+     parameters:(id)parameters
+        success:(QMHttpToolSuccessBlock)success
+        failure:(QMHttpToolFailBlock)failure;
+
+/**
+ *  GET 请求
+ *
+ *  @param URLString  请求地址URL
+ *  @param parameters 附带参数
+ *  @param success    请求成功回调
+ *  @param failure    请求失败回调
+ */
 + (void)GET:(NSString *)URLString
  parameters:(id)parameters
     success:(QMHttpToolSuccessBlock)success

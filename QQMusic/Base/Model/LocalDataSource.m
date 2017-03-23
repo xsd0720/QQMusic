@@ -108,4 +108,62 @@
 }
 
 
+- (NSDictionary *)rankesResponse
+{
+    return @{
+             @"items":@[
+                     @{
+                         @"name" : @"云音乐新歌榜",
+                         @"url"  : @"/discover/toplist?id=3779629"
+                         },
+                     @{
+                         @"name" : @"云音乐热歌榜",
+                         @"url"  : @"/discover/toplist?id=3778678"
+                         },
+                     @{
+                         @"name" : @"云音乐飙升榜",
+                         @"url"  : @"/discover/toplist?id=19723756"
+                         },
+                     @{
+                         @"name" : @"云音乐电音榜",
+                         @"url"  : @"/discover/toplist?id=10520166"
+                         },
+                     @{
+                         @"name" : @"UK排行榜周榜",
+                         @"url"  : @"/discover/toplist?id=180106"
+                         },
+                     @{
+                         @"name" : @"美国Billboard周榜",
+                         @"url"  : @"/discover/toplist?id=60198"
+                         },
+                     @{
+                         @"name" : @"KTV嗨榜",
+                         @"url"  : @"/discover/toplist?id=21845217"
+                         },
+                     @{
+                         @"name" : @"iTunes榜",
+                         @"url"  : @"/discover/toplist?id=11641012"
+                         },
+                     @{
+                         @"name" : @"Hit FM Top榜",
+                         @"url"  : @"/discover/toplist?id=120001"
+                         },
+                     @{
+                         @"name" : @"日本Oricon周榜",
+                         @"url"  : @"/discover/toplist?id=60131"
+                         },
+                     @{
+                         @"name" : @"韩国Melon排行榜周榜",
+                         @"url"  : @"/discover/toplist?id=3733003"
+                         },
+                     @{
+                         @"name" : @"韩国Mnet排行榜周榜",
+                         @"url"  : @"/discover/toplist?id=60255"
+                         },
+                     
+                     
+                     ]
+             };
+}
+
 @end

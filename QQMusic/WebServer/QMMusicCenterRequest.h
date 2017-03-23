@@ -23,6 +23,13 @@
                         success:(QMHttpToolSuccessBlock)success
                         failure:(QMHttpToolFailBlock)failure;
 
++ (void)getTopSongListWithURL:(NSString *)url
+                      success:(QMHttpToolSuccessBlock)success
+                      failure:(QMHttpToolFailBlock)failure;
+
++ (void)getSongDetailWithIds:(NSArray *)songids
+                     success:(QMHttpToolSuccessBlock)success
+                     failure:(QMHttpToolFailBlock)failure;
 
 + (void)songs_detail_new_api:(NSArray *)music_id
                      success:(QMHttpToolSuccessBlock)success

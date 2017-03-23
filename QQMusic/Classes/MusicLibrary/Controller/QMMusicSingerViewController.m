@@ -9,12 +9,14 @@
 #import "QMMusicSingerViewController.h"
 #import "BETouchView.h"
 #import "SingerCell.h"
-
+#import "QMMusicCenterRequest.h"
 #define CELLIDENFTIFER @"CELLIDENFTIFER"
 
 @interface QMMusicSingerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *singerTableView;
+
+@property (nonatomic, strong) NSMutableArray *artistsArray;
 
 @end
 
@@ -26,6 +28,7 @@
     
     [self setUpSubView];
     
+    [self requestDataSource];
 }
 
 - (void)setUpSubView
@@ -37,6 +40,19 @@
     [self.view addSubview:self.singerTableView];
 }
 
+
+- (void)requestDataSource
+{
+    [QMMusicCenterRequest getArtistListWithoffset:0 total:false limit:100 success:^(id responsObject) {
+        if ([responsObject objectForKey:@"artists"]) {
+            self.artistsArray = [[NSMutableArray alloc] initWithArray:[responsObject objectForKey:@"artists"]];
+            [self.singerTableView reloadData];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 50;
@@ -44,13 +60,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.artistsArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SingerCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLIDENFTIFER forIndexPath:indexPath];
-    cell.textLabel.text = @"薛之谦";
+    cell.textLabel.text = self.artistsArray[indexPath.row][@"name"];
+//    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:self.artistsArray[indexPath.row][@"picUrl"]] placeholderImage:nil];
     return cell;
 }
 

@@ -17,4 +17,6 @@
 @property (nonatomic, strong) NSDictionary *myMusicGridResponse;
 
 @property (nonatomic, strong) NSDictionary *libraryMusicGridResponse;
+
+@property (nonatomic, strong) NSDictionary *rankesResponse;
 @end

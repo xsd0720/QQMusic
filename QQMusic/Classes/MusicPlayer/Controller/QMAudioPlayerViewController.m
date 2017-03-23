@@ -28,11 +28,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.playingView = [[QMPlayingView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.playingView];
-    
 
+    [self setUpNav];
+    
+    [self setUpSubview];
+    
+    [self setUpDataSource];
+
+}
+
+- (void)setUpNav
+{
     UIButton *dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
     dismissButton.frame = CGRectMake(0, 0, 60, 44);
     [dismissButton setImage:[UIImage imageNamed:@"player_btn_close_normal"] forState:UIControlStateNormal];
@@ -45,7 +51,7 @@
     [moreButton setImage:[UIImage imageNamed:@"player_btn_more_normal"] forState:UIControlStateNormal];
     [moreButton setImage:[UIImage imageNamed:@"player_btn_more_highlight"] forState:UIControlStateHighlighted];
     [moreButton addTarget:self action:@selector(moreButtonButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-
+    
     
     self.autoScrollLabel = [[AutoScrollLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     self.autoScrollLabel.font = [UIFont systemFontOfSize:19];
@@ -56,11 +62,25 @@
     self.beTouchView.leftView = dismissButton;
     self.beTouchView.rightView = moreButton;
     self.beTouchView.centerView = self.autoScrollLabel;
-
     [self.view addSubview:self.beTouchView];
+}
 
-    
-    self.autoScrollLabel.text = @"剑魂";
+
+- (void)setUpSubview
+{
+    self.playingView = [[QMPlayingView alloc] initWithFrame:CGRectMake(0, STATUS_AND_NAV_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_AND_NAV_BAR_HEIGHT)];
+    [self.view addSubview:self.playingView];
+}
+
+
+- (void)setUpDataSource
+{
+    self.autoScrollLabel.text = self.songName;
+    if (self.songName) {
+        NSDictionary *datasource = @{@"songName":self.songName, @"songPicUrl":self.picURLStr, @"songUrl":self.songURLStr};
+        self.playingView.dataSource = datasource;
+    }
+
 }
 
 - (void)dismissButtonPressed

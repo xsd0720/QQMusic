@@ -13,7 +13,7 @@
 #import "LibMusicNewExpressCell.h"
 
 #import "QMMusicSingerViewController.h"
-
+#import "QMMusicRankingViewController.h"
 #define LIB_BANNER_CELLIDENTIFIER           @"LIB_BANNER_CELLIDENTIFIER"
 #define LIB_GRIDNUM_CELLIDENTIFIER          @"LIB_GRIDNUM_CELLIDENTIFIER"
 #define LIB_HOTRECOMMEND_CELLIDENTIFIER     @"LIB_HOTRECOMMEND_CELLIDENTIFIER"
@@ -167,7 +167,8 @@
                 break;
             case 1:
             {
-                
+                QMMusicRankingViewController *rankingViewController = [[QMMusicRankingViewController alloc] init];
+                [self.parentViewController.navigationController pushViewController:rankingViewController animated:YES];
             }
                 break;
             case 2:

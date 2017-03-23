@@ -10,6 +10,6 @@
 
 @interface QMPlayingView : UIView
 
-- (CGFloat)albumMode;
+@property (nonatomic, strong) NSDictionary *dataSource;
 
 @end
