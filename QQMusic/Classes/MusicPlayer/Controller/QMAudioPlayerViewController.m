@@ -75,11 +75,11 @@
 
 - (void)setUpDataSource
 {
-    self.autoScrollLabel.text = self.songName;
-    if (self.songName) {
-        NSDictionary *datasource = @{@"songName":self.songName, @"songPicUrl":self.picURLStr, @"songUrl":self.songURLStr};
-        self.playingView.dataSource = datasource;
+    if (self.songInfoModel) {
+        self.playingView.songInfoModel = _songInfoModel;
     }
+    
+
 
 }
 

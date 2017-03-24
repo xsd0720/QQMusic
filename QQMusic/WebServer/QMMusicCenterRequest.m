@@ -93,6 +93,21 @@ static NSString *PUBKEY =  @"010001";
     } failure:^(NSError *error) {
         failure(error);
     }];
+
+//    NSString *requestURLStr = @"http://music.163.com/weapi/song/enhance/player/url?csrf_token=''";
+//    NSDictionary *params = @{
+//                             @"ids":songids,
+//                             @"br":@"320000",
+//                             @"csrf_token":@"",
+//                             };
+//    
+//    params = [[QMMusicCenterRequest sharedRequest] encrypted_request:params];
+//    [QMHttpTool POST:requestURLStr parameters:params success:^(id responsObject) {
+//        success(responsObject);
+//    } failure:^(NSError *error) {
+//        failure(error);
+//    }];
+    
 }
 
 //params:2VrMwZttyQVN2NMsHPMzNAXU9Z/uOn1JJvegGlj43VZsnZ7EFZy7Zj0AYIYxD3xHe2VaeVw2XV8gB6aTYiOyEcYUmi09OYk4273iwTPGMY4YuK8T9Y5s/AEUvOyUoWSD+7N7YogPaPNOz0gdxIz0aQ==
@@ -144,6 +159,27 @@ static NSString *PUBKEY =  @"010001";
     }];
     
     
+}
+
++ (void)searchWithWord:(NSString *)word
+            searchType:(NSString *)searchType
+               success:(QMHttpToolSuccessBlock)success
+               failure:(QMHttpToolFailBlock)failure
+{
+    NSString *requestURLStr = @"http://music.163.com/api/search/get";
+    NSDictionary *params = @{
+                             @"s":word,
+                             @"type":searchType,
+                             @"offset":@"0",
+                             @"total":@"1",
+                             @"limit":@"60",
+                             };
+    
+    [QMHttpTool POST:requestURLStr parameters:params success:^(id responsObject) {
+        success(responsObject);
+    } failure:^(NSError *error) {
+         failure(error);
+    }];
 }
 
 - (NSString *)createSecretKey

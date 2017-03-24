@@ -7,7 +7,7 @@
 //
 
 #import "QMRootTopBarViewController.h"
-
+#import "QMSearchHeaderView.h"
 #import "QMMineViewController.h"
 #import "QMMusicLibraryViewController.h"
 #import "QMCaptureTool.h"
@@ -82,6 +82,8 @@
 
 @property (nonatomic, strong) UIView *navView;
 
+@property (nonatomic, strong) QMSearchHeaderView *serchHeaderView;
+
 @property (nonatomic, strong) ContainerScollView *mainScrollView;
 
 @property (nonatomic, strong) QMMineViewController *mineViewController;
@@ -106,7 +108,7 @@
     [self setUpNav];
     [self setUpSubView];
     
-        self.captureTool = [[QMCaptureTool alloc] init];
+    self.captureTool = [[QMCaptureTool alloc] init];
     
 }
 
@@ -157,7 +159,11 @@
 
 - (void)setUpSubView
 {
-    self.mainScrollView = [[ContainerScollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navView.frame), CGRectGetMaxX(self.view.bounds), CGRectGetMaxY(self.view.bounds)-CGRectGetMaxY(self.navView.frame))];
+    
+    self.serchHeaderView = [[QMSearchHeaderView alloc] initWithFrame:CGRectMake(0,  CGRectGetMaxY(self.navView.frame), SCREEN_WIDTH, 44)];
+    [self.view addSubview:self.serchHeaderView];
+    
+    self.mainScrollView = [[ContainerScollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.serchHeaderView.frame), CGRectGetMaxX(self.view.bounds), CGRectGetMaxY(self.view.bounds)-CGRectGetMaxY(self.serchHeaderView.frame))];
     self.mainScrollView.contentSize = CGSizeMake(CGRectGetMaxX(self.view.bounds)*2, 0);
     self.mainScrollView.pagingEnabled = YES;
     self.mainScrollView.delegate = self;

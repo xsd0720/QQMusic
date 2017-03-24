@@ -8,7 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+@class AudioPlayManager;
+
+@protocol AudioPlayManagerDelegate <NSObject>
+
+- (void)prepareToPlay;
+
+@end
+
 @interface AudioPlayManager : NSObject
+
+@property (nonatomic, assign) id<AudioPlayManagerDelegate> delegate;
 
 @property (nonatomic, strong) AVPlayer *audioPlayer;
 
@@ -21,5 +31,10 @@
 - (void)pause;
 
 - (void)finish;
+
+- (CMTime)playerItemDuration;
+
+- (CMTime)currentTime;
+
 
 @end

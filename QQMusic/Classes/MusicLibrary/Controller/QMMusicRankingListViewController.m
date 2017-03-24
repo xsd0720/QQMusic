@@ -35,7 +35,7 @@
 //        NSSet *set = [NSSet setWithArray:self.dataSourceSongids];
 //        self.dataSourceSongids = [set allObjects];
         [QMMusicCenterRequest getSongDetailWithIds:self.dataSourceSongids success:^(id responsObject) {
-            self.dataSource = responsObject[@"songs"];
+            self.dataSource = [NSArray arrayWithArray:responsObject[@"songs"]];
             [self.songlistTableView reloadData];
         } failure:^(NSError *error) {
             
@@ -76,10 +76,15 @@
     NSDictionary *dic = self.dataSource[indexPath.row];
 
     dispatch_async(dispatch_get_main_queue(), ^{
+        
+        SongInfoModel *songInfoModel = [[SongInfoModel alloc] init];
+        songInfoModel.songName = dic[@"name"];
+        songInfoModel.songPicUrl = dic[@"album"][@"picUrl"];
+        songInfoModel.songUrl = dic[@"mp3Url"];
+        
+        
         QMAudioPlayerViewController *audioPlayerViewController = [[QMAudioPlayerViewController alloc] init];
-        audioPlayerViewController.songName = dic[@"name"];
-        audioPlayerViewController.picURLStr = dic[@"album"][@"picUrl"];
-        audioPlayerViewController.songURLStr = dic[@"mp3Url"];
+        audioPlayerViewController.songInfoModel = songInfoModel;
         [self presentViewController:audioPlayerViewController animated:YES completion:nil];
     });
 

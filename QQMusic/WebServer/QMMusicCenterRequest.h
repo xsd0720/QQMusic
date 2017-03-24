@@ -44,6 +44,12 @@
              success:(QMHttpToolSuccessBlock)success
              failure:(QMHttpToolFailBlock)failure;
 
+//# 搜索单曲(1)，歌手(100)，专辑(10)，歌单(1000)，用户(1002) *(type)*
++ (void)searchWithWord:(NSString *)word
+            searchType:(NSString *)searchType
+               success:(QMHttpToolSuccessBlock)success
+               failure:(QMHttpToolFailBlock)failure;
+
 
 - (void)decryed;
 @end

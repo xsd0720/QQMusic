@@ -23,5 +23,5 @@
 #import "UIColor+Category.h"
 
 #import "QMMusicCenterRequest.h"
-
+#import "SongInfoModel.h"
 #endif /* QMPublicHeader_h */

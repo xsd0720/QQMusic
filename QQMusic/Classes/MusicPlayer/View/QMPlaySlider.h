@@ -21,7 +21,7 @@
 
 @interface QMPlaySlider : UIControl
 
-@property(nonatomic, assign) id<QMPlaySliderDelegate> delegate;
+@property (nonatomic, weak, nullable) id<QMPlaySliderDelegate> delegate;
 
 @property(nonatomic) float value;                                 // default 0.0. this value will be pinned to min/max
 @property(nonatomic) float cacheValue;                            // default 0.0. this value will be pinned to min/max

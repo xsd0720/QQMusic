@@ -10,6 +10,6 @@
 
 @interface QMPlayingView : UIView
 
-@property (nonatomic, strong) NSDictionary *dataSource;
+@property (nonatomic, strong) SongInfoModel *songInfoModel;
 
 @end

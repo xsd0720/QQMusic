@@ -97,11 +97,12 @@
             if (prop > 1) {
                 prop = 1;
             }
+
             self.minimumView.width = CGRectGetMaxX(self.trackView.bounds)*prop;
             self.maximumView.x = CGRectGetMaxX(self.minimumView.frame);
             self.maximumView.width = CGRectGetMaxX(self.trackView.bounds)-CGRectGetMaxX(self.minimumView.frame);
             self.thumb.centerX = CGRectGetMaxX(self.minimumView.frame);
-            NSLog(@"%f", self.thumb.centerX);
+
         }
     }
 

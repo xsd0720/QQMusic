@@ -8,6 +8,7 @@
 
 #import "BENoTouchView.h"
 #import "QMPlaySlider.h"
+#import "AudioPlayManager.h"
 @interface BENoTouchView()<QMPlaySliderDelegate>
 
 //time show
@@ -79,16 +80,17 @@
     CGFloat button_padding = (CGRectGetMaxX(self.bounds)-(oneSize+twoSize+threeSize+twoSize+oneSize)-2*padding)/4;
     
     self.playModeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_random_normal"] forState:UIControlStateNormal];
-    [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_random_hightlight"] forState:UIControlStateHighlighted];
     self.playModeButton.frame = CGRectMake(padding, 0, oneSize, oneSize);
+    [self.playModeButton addTarget:self action:@selector(playModeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.playModeButton];
+    self.playMode = 0;
     
     
     self.preButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.preButton setImage:[UIImage imageNamed:@"player_btn_pre_normal"] forState:UIControlStateNormal];
     [self.preButton setImage:[UIImage imageNamed:@"player_btn_pre_hightlight"] forState:UIControlStateHighlighted];
     self.preButton.frame = CGRectMake(CGRectGetMaxX(self.playModeButton.frame)+button_padding, 0, twoSize, twoSize);
+    [self.preButton addTarget:self action:@selector(preButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.preButton];
     
     
@@ -96,6 +98,7 @@
     [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_play_normal"] forState:UIControlStateNormal];
     [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_play_highlight"] forState:UIControlStateHighlighted];
     self.playPauseButton.frame = CGRectMake(CGRectGetMaxX(self.preButton.frame)+button_padding, 0, threeSize, threeSize);
+    [self.playPauseButton addTarget:self action:@selector(playPauseButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.playPauseButton];
     
     
@@ -104,6 +107,7 @@
     [self.nextButton setImage:[UIImage imageNamed:@"player_btn_next_normal"] forState:UIControlStateNormal];
     [self.nextButton setImage:[UIImage imageNamed:@"player_btn_next_hightlight"] forState:UIControlStateHighlighted];
     self.nextButton.frame = CGRectMake(CGRectGetMaxX(self.playPauseButton.frame)+button_padding, 0, twoSize, twoSize);
+    [self.nextButton addTarget:self action:@selector(nextButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.nextButton];
     
     
@@ -111,6 +115,7 @@
     [self.playListButton setImage:[UIImage imageNamed:@"player_btn_playlist_normal"] forState:UIControlStateNormal];
     [self.playListButton setImage:[UIImage imageNamed:@"player_btn_playlist_highlight"] forState:UIControlStateHighlighted];
     self.playListButton.frame = CGRectMake(CGRectGetMaxX(self.nextButton.frame)+button_padding, 0, oneSize, oneSize);
+    [self.playListButton addTarget:self action:@selector(playListButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.playListButton];
     
     
@@ -120,6 +125,84 @@
     self.playPauseButton.centerY = centerY;
     self.nextButton.centerY = centerY;
     self.playListButton.centerY = centerY;
+}
+
+- (void)setPlayMode:(PlayMode)playMode
+{
+    _playMode = playMode;
+    switch (playMode) {
+            
+        case PlayModeRandom:
+        {
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_random_normal"] forState:UIControlStateNormal];
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_random_hightlight"] forState:UIControlStateHighlighted];
+        }
+            break;
+            
+        case PlayModeRepeat:
+        {
+            
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_repeat_normal"] forState:UIControlStateNormal];
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_repeat_highlight"] forState:UIControlStateHighlighted];
+        }
+            break;
+        case PlayModeRepeatOne:
+        {
+            
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_repeatone_normal"] forState:UIControlStateNormal];
+            [self.playModeButton setImage:[UIImage imageNamed:@"player_btn_repeatone_hightlight"] forState:UIControlStateHighlighted];
+        }
+            break;
+       
+            
+        default:
+            break;
+    }
+}
+
+- (void)playModeButtonPressed:(UIButton *)sender
+{
+    NSInteger currentMode = self.playMode;
+    currentMode++;
+    if (currentMode >2) {
+        currentMode = 0;
+    }
+    self.playMode = currentMode;
+}
+
+- (void)preButtonPressed:(UIButton *)sender
+{
+    
+}
+
+- (void)playPauseButtonPressed:(UIButton *)sender
+{
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_pause_normal"] forState:UIControlStateNormal];
+        [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_pause_highlight"] forState:UIControlStateHighlighted];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(BENoTouchViewShouldPlay)]) {
+            [self.delegate BENoTouchViewShouldPlay];
+        }
+    }else
+    {
+        [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_play_normal"] forState:UIControlStateNormal];
+        [self.playPauseButton setImage:[UIImage imageNamed:@"player_btn_play_highlight"] forState:UIControlStateHighlighted];
+ 
+        if (self.delegate && [self.delegate respondsToSelector:@selector(BENoTouchViewShouldPause)]) {
+            [self.delegate BENoTouchViewShouldPause];
+        }
+    }
+}
+
+- (void)nextButtonPressed:(UIButton *)sender
+{
+   
+}
+
+- (void)playListButtonPressed:(UIButton *)sender
+{
+
 }
 
 - (void)thumbTouchesBegan
@@ -132,5 +215,20 @@
      self.currentTimeLabel.font = [UIFont systemFontOfSize:12];
 }
 
+
+- (void)updateCurrentTimeLabel:(NSString *)text
+{
+    self.currentTimeLabel.text = text;
+}
+
+- (void)updateDurationTimeLabel:(NSString *)text
+{
+    self.durationTimeLabel.text = text;
+}
+
+- (void)updateSliderValue:(CGFloat)value
+{
+    self.playSlider.value = value;
+}
 
 @end

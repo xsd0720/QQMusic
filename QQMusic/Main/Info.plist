@@ -91,6 +91,10 @@
 	<string>为方便使用地图功能，请您允许定位！</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>亲，我们要打开你的相册！</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -12,11 +12,7 @@
 
 @interface QMAudioPlayerViewController : QMBaseViewController
 
-@property (nonatomic, strong) NSString *songName;
-
-@property (nonatomic, strong) NSString *songURLStr;
-
-@property (nonatomic, strong) NSString *picURLStr;
+@property (nonatomic, strong) SongInfoModel *songInfoModel;
 
 - (void)initAudioPlayerUIWhenInit;
 

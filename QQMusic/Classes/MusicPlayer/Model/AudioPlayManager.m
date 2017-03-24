@@ -8,6 +8,9 @@
 
 #import "AudioPlayManager.h"
 
+//播放状态
+static void *AudioPlayerStatusObservationContext = &AudioPlayerStatusObservationContext;
+
 @interface AudioPlayManager()<AVAudioPlayerDelegate>
 
 @end
@@ -26,23 +29,12 @@
 
 - (void)preparePlayerWithURL:(NSURL *)URL
 {
-//    if (![URL isKindOfClass:[NSURL class]]) {
-//        URL = [NSURL URLWithString:URL];
-//    }
-    NSError *error;
-    
-    
     self.audioPlayer = [AVPlayer playerWithURL:URL];
-//    [self.audioPlayer play];
-    //    self.audioPlayer = [[AVPlayer alloc] initWithContentsOfURL:URL error:&error];
-//    self.audioPlayer.delegate = self;
-//    self.audioPlayer.volume = 1;
-//    //预播放
-//    [self.audioPlayer prepareToPlay];
-//    if (error) {
-//        NSLog(@"%@", error);
-//    }
-    
+    [self.audioPlayer.currentItem addObserver:self
+                      forKeyPath:@"status"
+                         options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew
+                         context:AudioPlayerStatusObservationContext];
+
 }
 
 - (void)play
@@ -56,9 +48,56 @@
 }
 
 
+- (CMTime)currentTime
+{
+   return self.audioPlayer.currentTime;
+}
+
+- (CMTime)playerItemDuration
+{
+    return self.audioPlayer.currentItem.duration;
+}
+
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
     NSLog(@"audio play finish");
 }
 
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    //status 发生改变
+    if (context == AudioPlayerStatusObservationContext)
+    {
+        AVPlayerItemStatus status = [[change objectForKey:NSKeyValueChangeNewKey] integerValue];
+        switch (status)
+        {
+                
+                //未知原因无法正常播放
+            case AVPlayerItemStatusUnknown:
+            {
+                
+            }
+                break;
+                
+            case AVPlayerItemStatusReadyToPlay:
+            {
+                if (self.delegate && [self.delegate respondsToSelector:@selector(prepareToPlay)]) {
+                    [self.delegate prepareToPlay];
+                }
+                
+            }
+                break;
+                
+            case AVPlayerItemStatusFailed:
+            {
+
+            }
+                
+                break;
+        }
+        
+    }
+
+}
 @end

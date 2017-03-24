@@ -57,6 +57,19 @@
 		0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B2AC41E779194006D0378 /* QMDataSourceTool.m */; };
 		0C2B2ACB1E779C61006D0378 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B2AC91E779A3F006D0378 /* libxml2.tbd */; };
 		0C5FC1281E8369A3000977F6 /* QMPlaySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FC1271E8369A3000977F6 /* QMPlaySlider.m */; };
+		0C7007EC1E84DEB000E90BFA /* SongInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007EB1E84DEB000E90BFA /* SongInfoModel.m */; };
+		0C7008091E84DF9A00E90BFA /* JSONModel+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007F01E84DF9A00E90BFA /* JSONModel+CoreData.m */; };
+		0C70080A1E84DF9A00E90BFA /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007F21E84DF9A00E90BFA /* JSONModel.m */; };
+		0C70080B1E84DF9A00E90BFA /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007F41E84DF9A00E90BFA /* JSONModelArray.m */; };
+		0C70080C1E84DF9A00E90BFA /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007F61E84DF9A00E90BFA /* JSONModelClassProperty.m */; };
+		0C70080D1E84DF9A00E90BFA /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007F81E84DF9A00E90BFA /* JSONModelError.m */; };
+		0C70080E1E84DF9A00E90BFA /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007FB1E84DF9A00E90BFA /* NSArray+JSONModel.m */; };
+		0C70080F1E84DF9A00E90BFA /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7007FF1E84DF9A00E90BFA /* JSONAPI.m */; };
+		0C7008101E84DF9A00E90BFA /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7008011E84DF9A00E90BFA /* JSONHTTPClient.m */; };
+		0C7008111E84DF9A00E90BFA /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7008031E84DF9A00E90BFA /* JSONModel+networking.m */; };
+		0C7008121E84DF9A00E90BFA /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7008061E84DF9A00E90BFA /* JSONKeyMapper.m */; };
+		0C7008131E84DF9A00E90BFA /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7008081E84DF9A00E90BFA /* JSONValueTransformer.m */; };
+		0C7008161E84E11A00E90BFA /* QMSearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7008151E84E11A00E90BFA /* QMSearchHeaderView.m */; };
 		0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E11E69440600A2D295 /* QMContainersViewController.m */; };
 		0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8871E41E69441F00A2D295 /* QMLeftMenuViewController.m */; };
 		0CB0CD501E7B958F001F7D9B /* JKBigDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0CD481E7B958F001F7D9B /* JKBigDecimal.m */; };
@@ -205,6 +218,33 @@
 		0C2B2AC91E779A3F006D0378 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		0C5FC1261E8369A3000977F6 /* QMPlaySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPlaySlider.h; sourceTree = "<group>"; };
 		0C5FC1271E8369A3000977F6 /* QMPlaySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPlaySlider.m; sourceTree = "<group>"; };
+		0C7007EA1E84DEB000E90BFA /* SongInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongInfoModel.h; sourceTree = "<group>"; };
+		0C7007EB1E84DEB000E90BFA /* SongInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongInfoModel.m; sourceTree = "<group>"; };
+		0C7007EF1E84DF9A00E90BFA /* JSONModel+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+CoreData.h"; sourceTree = "<group>"; };
+		0C7007F01E84DF9A00E90BFA /* JSONModel+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+CoreData.m"; sourceTree = "<group>"; };
+		0C7007F11E84DF9A00E90BFA /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		0C7007F21E84DF9A00E90BFA /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		0C7007F31E84DF9A00E90BFA /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		0C7007F41E84DF9A00E90BFA /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		0C7007F51E84DF9A00E90BFA /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		0C7007F61E84DF9A00E90BFA /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		0C7007F71E84DF9A00E90BFA /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		0C7007F81E84DF9A00E90BFA /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		0C7007FA1E84DF9A00E90BFA /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		0C7007FB1E84DF9A00E90BFA /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		0C7007FC1E84DF9A00E90BFA /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		0C7007FE1E84DF9A00E90BFA /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		0C7007FF1E84DF9A00E90BFA /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		0C7008001E84DF9A00E90BFA /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		0C7008011E84DF9A00E90BFA /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		0C7008021E84DF9A00E90BFA /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		0C7008031E84DF9A00E90BFA /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		0C7008051E84DF9A00E90BFA /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		0C7008061E84DF9A00E90BFA /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		0C7008071E84DF9A00E90BFA /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		0C7008081E84DF9A00E90BFA /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		0C7008141E84E11A00E90BFA /* QMSearchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMSearchHeaderView.h; sourceTree = "<group>"; };
+		0C7008151E84E11A00E90BFA /* QMSearchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMSearchHeaderView.m; sourceTree = "<group>"; };
 		0C8871E01E69440600A2D295 /* QMContainersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMContainersViewController.h; sourceTree = "<group>"; };
 		0C8871E11E69440600A2D295 /* QMContainersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMContainersViewController.m; sourceTree = "<group>"; };
 		0C8871E31E69441F00A2D295 /* QMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeftMenuViewController.h; sourceTree = "<group>"; };
@@ -386,6 +426,7 @@
 		0C057BAB1E67EC5900B7A9CC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				0C7007ED1E84DF9A00E90BFA /* JSONModel */,
 				0C057BB11E67ECCF00B7A9CC /* SDWebImage */,
 				0C057BD31E67ECCF00B7A9CC /* AFNetworking */,
 			);
@@ -612,6 +653,8 @@
 		0C0E25201E72551500758ABA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C7008141E84E11A00E90BFA /* QMSearchHeaderView.h */,
+				0C7008151E84E11A00E90BFA /* QMSearchHeaderView.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -630,6 +673,68 @@
 				0C0E252A1E7258B600758ABA /* BETouchView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0C7007ED1E84DF9A00E90BFA /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C7007EE1E84DF9A00E90BFA /* JSONModel */,
+				0C7007F91E84DF9A00E90BFA /* JSONModelCategories */,
+				0C7007FC1E84DF9A00E90BFA /* JSONModelLib.h */,
+				0C7007FD1E84DF9A00E90BFA /* JSONModelNetworking */,
+				0C7008041E84DF9A00E90BFA /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		0C7007EE1E84DF9A00E90BFA /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C7007EF1E84DF9A00E90BFA /* JSONModel+CoreData.h */,
+				0C7007F01E84DF9A00E90BFA /* JSONModel+CoreData.m */,
+				0C7007F11E84DF9A00E90BFA /* JSONModel.h */,
+				0C7007F21E84DF9A00E90BFA /* JSONModel.m */,
+				0C7007F31E84DF9A00E90BFA /* JSONModelArray.h */,
+				0C7007F41E84DF9A00E90BFA /* JSONModelArray.m */,
+				0C7007F51E84DF9A00E90BFA /* JSONModelClassProperty.h */,
+				0C7007F61E84DF9A00E90BFA /* JSONModelClassProperty.m */,
+				0C7007F71E84DF9A00E90BFA /* JSONModelError.h */,
+				0C7007F81E84DF9A00E90BFA /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		0C7007F91E84DF9A00E90BFA /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				0C7007FA1E84DF9A00E90BFA /* NSArray+JSONModel.h */,
+				0C7007FB1E84DF9A00E90BFA /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		0C7007FD1E84DF9A00E90BFA /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0C7007FE1E84DF9A00E90BFA /* JSONAPI.h */,
+				0C7007FF1E84DF9A00E90BFA /* JSONAPI.m */,
+				0C7008001E84DF9A00E90BFA /* JSONHTTPClient.h */,
+				0C7008011E84DF9A00E90BFA /* JSONHTTPClient.m */,
+				0C7008021E84DF9A00E90BFA /* JSONModel+networking.h */,
+				0C7008031E84DF9A00E90BFA /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		0C7008041E84DF9A00E90BFA /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				0C7008051E84DF9A00E90BFA /* JSONKeyMapper.h */,
+				0C7008061E84DF9A00E90BFA /* JSONKeyMapper.m */,
+				0C7008071E84DF9A00E90BFA /* JSONValueTransformer.h */,
+				0C7008081E84DF9A00E90BFA /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
 		0C8871E61E69460300A2D295 /* StaticImage */ = {
@@ -667,6 +772,8 @@
 			children = (
 				0CB0CD721E7BD6D6001F7D9B /* LocalDataSource.h */,
 				0CB0CD731E7BD6D6001F7D9B /* LocalDataSource.m */,
+				0C7007EA1E84DEB000E90BFA /* SongInfoModel.h */,
+				0C7007EB1E84DEB000E90BFA /* SongInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -902,6 +1009,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = U7ZS2JEVUH;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -945,6 +1057,7 @@
 				0CFE6FC91E6FFA3E00B1280D /* QMMiniPlayerView.m in Sources */,
 				0C057BEB1E67ECCF00B7A9CC /* UIImage+GIF.m in Sources */,
 				0C057C111E67F5CF00B7A9CC /* UIView+SubView.m in Sources */,
+				0C70080B1E84DF9A00E90BFA /* JSONModelArray.m in Sources */,
 				0C1AB0D71E7FC3D900AF88F9 /* LibMusicDayRecommendCell.m in Sources */,
 				0CB0CD701E7BD190001F7D9B /* UIColor+Category.m in Sources */,
 				0C057C0E1E67F5CF00B7A9CC /* UIView+Extension.m in Sources */,
@@ -955,11 +1068,13 @@
 				0CB0CD6D1E7BCFA1001F7D9B /* MyMusicTitleCell.m in Sources */,
 				0CFE6FCC1E6FFA9F00B1280D /* QMLyricView.m in Sources */,
 				0CB0CD581E7BB8D7001F7D9B /* LRCParser.m in Sources */,
+				0C7008101E84DF9A00E90BFA /* JSONHTTPClient.m in Sources */,
 				0C057C101E67F5CF00B7A9CC /* UIView+Toast.m in Sources */,
 				0C057BF21E67ECCF00B7A9CC /* AFNetworkReachabilityManager.m in Sources */,
 				0C8871E51E69441F00A2D295 /* QMLeftMenuViewController.m in Sources */,
 				0CEB3D891E78E22500B726FA /* GCDAsyncUdpSocket.m in Sources */,
 				0CB0CD551E7B9739001F7D9B /* NSObject+Category.m in Sources */,
+				0C70080E1E84DF9A00E90BFA /* NSArray+JSONModel.m in Sources */,
 				0C057BE61E67ECCF00B7A9CC /* SDWebImageDownloader.m in Sources */,
 				0CB0CD611E7BC881001F7D9B /* QMImageRoundButton.m in Sources */,
 				0CB0CD501E7B958F001F7D9B /* JKBigDecimal.m in Sources */,
@@ -973,16 +1088,21 @@
 				0C1AB0E01E7FDE9500AF88F9 /* SingerCell.m in Sources */,
 				0C057BEA1E67ECCF00B7A9CC /* UIButton+WebCache.m in Sources */,
 				0C5FC1281E8369A3000977F6 /* QMPlaySlider.m in Sources */,
+				0C7008161E84E11A00E90BFA /* QMSearchHeaderView.m in Sources */,
 				0C1AB0CE1E7FC36200AF88F9 /* LibMusicBannerCell.m in Sources */,
 				0C057BEF1E67ECCF00B7A9CC /* UIImageView+WebCache.m in Sources */,
+				0C70080A1E84DF9A00E90BFA /* JSONModel.m in Sources */,
 				0CF56EB91E76996600E114C8 /* AutoScrollTextView.m in Sources */,
 				0CFE6FCF1E6FFAD200B1280D /* QMPlayingView.m in Sources */,
 				0C057BF41E67ECCF00B7A9CC /* AFURLRequestSerialization.m in Sources */,
 				0CBDC1D91E7A309F00CC5387 /* QMMusicCenterRequest.m in Sources */,
+				0C7008131E84DF9A00E90BFA /* JSONValueTransformer.m in Sources */,
+				0C70080C1E84DF9A00E90BFA /* JSONModelClassProperty.m in Sources */,
 				0C057BF31E67ECCF00B7A9CC /* AFSecurityPolicy.m in Sources */,
 				0C057C281E67FBA600B7A9CC /* QMMainViewController.m in Sources */,
 				0C057BF61E67ECCF00B7A9CC /* AFURLSessionManager.m in Sources */,
 				0C057BE51E67ECCF00B7A9CC /* SDWebImageDecoder.m in Sources */,
+				0C7008121E84DF9A00E90BFA /* JSONKeyMapper.m in Sources */,
 				0C057C0F1E67F5CF00B7A9CC /* UIView+Extention.m in Sources */,
 				0C057BA81E67EBF000B7A9CC /* QMAppDelegate.m in Sources */,
 				0C8871E21E69440600A2D295 /* QMContainersViewController.m in Sources */,
@@ -990,10 +1110,13 @@
 				0CEB3DA01E78E33F00B726FA /* QMCaptureTool.m in Sources */,
 				0CF56EB01E76358400E114C8 /* UIScrollView+UITouch.m in Sources */,
 				0CFE6FD21E6FFC8F00B1280D /* QMLandscapePlayingView.m in Sources */,
+				0C7008091E84DF9A00E90BFA /* JSONModel+CoreData.m in Sources */,
 				0CF56EBC1E76A97100E114C8 /* AutoScrollLabel.m in Sources */,
+				0C70080F1E84DF9A00E90BFA /* JSONAPI.m in Sources */,
 				0CEB3D981E78E25500B726FA /* GTMBase64.m in Sources */,
 				0CB0CD671E7BCF65001F7D9B /* MyMusicGridNumCell.m in Sources */,
 				0CB0CD641E7BCF02001F7D9B /* MyMusicUserInfoCollectionCell.m in Sources */,
+				0C7008111E84DF9A00E90BFA /* JSONModel+networking.m in Sources */,
 				0C057BA71E67EBF000B7A9CC /* main.m in Sources */,
 				0CFE6FAF1E6FA51300B1280D /* QMMusicLibraryViewController.m in Sources */,
 				0C057BED1E67ECCF00B7A9CC /* UIImage+WebP.m in Sources */,
@@ -1002,6 +1125,7 @@
 				0C057BE21E67ECCF00B7A9CC /* NSData+ImageContentType.m in Sources */,
 				0C057BE71E67ECCF00B7A9CC /* SDWebImageDownloaderOperation.m in Sources */,
 				0C057C2F1E67FBD700B7A9CC /* QMSettingViewController.m in Sources */,
+				0C70080D1E84DF9A00E90BFA /* JSONModelError.m in Sources */,
 				0C057BE81E67ECCF00B7A9CC /* SDWebImageManager.m in Sources */,
 				0CB0CD5B1E7BBCBE001F7D9B /* NSString+Validate.m in Sources */,
 				0C0E252E1E7279B300758ABA /* QMMiniPlayerPlayButton.m in Sources */,
@@ -1025,6 +1149,7 @@
 				0CE78D431E6E4BD600628F55 /* AFAudioRouter.m in Sources */,
 				0C057BF51E67ECCF00B7A9CC /* AFURLResponseSerialization.m in Sources */,
 				0C2B2AC51E779194006D0378 /* QMDataSourceTool.m in Sources */,
+				0C7007EC1E84DEB000E90BFA /* SongInfoModel.m in Sources */,
 				0CDA96D41E778E3100DF8EEC /* BENoTouchView.m in Sources */,
 				0C1AB0D11E7FC37C00AF88F9 /* LibMusicGridNumCell.m in Sources */,
 				0C1AB0DD1E7FD38600AF88F9 /* QMMusicSingerViewController.m in Sources */,
